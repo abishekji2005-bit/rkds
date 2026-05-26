@@ -1,0 +1,2010 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/App.tsx");import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=422d7d79"; const Fragment = __vite__cjsImport0_react_jsxDevRuntime["Fragment"]; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+var _s = $RefreshSig$(), _s2 = $RefreshSig$(), _s3 = $RefreshSig$(), _s4 = $RefreshSig$(), _s5 = $RefreshSig$();
+import __vite__cjsImport1_react from "/node_modules/.vite/deps/react.js?v=422d7d79"; const useEffect = __vite__cjsImport1_react["useEffect"]; const useMemo = __vite__cjsImport1_react["useMemo"]; const useState = __vite__cjsImport1_react["useState"];
+import {
+  Braces,
+  ChevronLeft,
+  ChevronRight,
+  Clock,
+  Facebook,
+  Globe2,
+  Heart,
+  Instagram,
+  Mail,
+  MapPin,
+  Menu,
+  MessageCircle,
+  Phone,
+  ShieldCheck,
+  SmilePlus,
+  Sparkles,
+  Stethoscope,
+  Tag,
+  WandSparkles,
+  X,
+  Youtube,
+  Zap
+} from "/node_modules/.vite/deps/lucide-react.js?v=7aaa43e7";
+const phoneDisplay = "+91 99944 62094";
+const phoneHref = "tel:+919994462094";
+const whatsappHref = "https://wa.me/919994462094";
+const email = "drnaveenaramnath@gmail.com";
+const emailHref = `mailto:${email}`;
+const hours = "10:00 AM - 1:00 PM and 5:00 PM - 8:00 PM (Daily)";
+const address = "Vaiyapuri Nagar, SNS College Bus Stop, Kurumbapalayam, Coimbatore - 641 107";
+const navLinks = [
+  { label: "Treatments", href: "#treatments" },
+  { label: "Doctors", href: "#doctors" },
+  { label: "Equipment", href: "#equipment" },
+  { label: "About", href: "#about" },
+  { label: "Contact", href: "#contact" }
+];
+const whyCards = [
+  {
+    title: "Years of Trusted Care",
+    stat: "40+",
+    body: "Serving patients since 1984 - in Ooty, Coimbatore, and beyond. Built on professional care and affordable healthcare for all.",
+    icon: ShieldCheck,
+    featured: true
+  },
+  {
+    title: "Painless Treatment",
+    body: "Advanced laser technology means most procedures are completed without discomfort. Experience dentistry that prioritises your comfort.",
+    icon: Zap
+  },
+  {
+    title: "Worldwide Patients",
+    body: "Patients from across India and abroad choose RKDS for specialist-level care and advanced technology.",
+    icon: Globe2
+  },
+  {
+    title: "Affordable Quality",
+    body: "Expert specialist care at a price that is honest, transparent, and fair.",
+    icon: Tag
+  }
+];
+const services = [
+  {
+    title: "Dental Implants",
+    body: "Replace missing teeth with a permanent, natural-looking solution placed by a certified implant specialist using ultrasonic surgical technology.",
+    icon: SmilePlus
+  },
+  {
+    title: "Root Canal Treatment",
+    body: "We remove infection and save your tooth comfortably. Our specialist endodontists use laser-assisted techniques for a painless procedure.",
+    icon: Stethoscope
+  },
+  {
+    title: "Braces & Clear Aligners",
+    body: "Straighten teeth with traditional braces or near-invisible trays, planned using 3D digital scanning for precise alignment.",
+    icon: Braces
+  },
+  {
+    title: "Smile Designing",
+    body: "A complete smile makeover using veneers, crowns, whitening, and gum correction. Your dream smile, designed by a prosthodontics specialist.",
+    icon: Sparkles
+  },
+  {
+    title: "Laser Gum Treatment",
+    body: "Treat gum disease with our Zolar diode laser - no cuts, no stitches, minimal bleeding, and dramatically faster healing.",
+    icon: WandSparkles
+  },
+  {
+    title: "Children's Dentistry",
+    body: "Gentle, specialist dental care for children. Our paediatric specialist creates a fear-free environment that kids actually enjoy.",
+    icon: Heart
+  }
+];
+const processSteps = [
+  {
+    num: "01",
+    title: "Book or Call",
+    body: "Choose a convenient time online, call us directly, or WhatsApp. We confirm your appointment within minutes."
+  },
+  {
+    num: "02",
+    title: "Meet Your Specialist",
+    body: "You will consult with a dedicated MDS specialist, not a general dentist. We explain every option clearly before we begin."
+  },
+  {
+    num: "03",
+    title: "Treatment, Comfortably Done",
+    body: "Your procedure is performed with laser and digital equipment by a qualified specialist. Most treatments are painless."
+  }
+];
+const doctors = [
+  {
+    initials: "NR",
+    tag: "Face & Jaw Surgeon",
+    name: "Dr. Naveena Ramnath",
+    quals: "BDS, MDS (OMFS), IDEA (Implantology), AAD (Ortho), M.Sc Psychology",
+    bio: "Leading faciomaxillary surgeon with expertise in jaw corrections, facial surgery, and dental implants."
+  },
+  {
+    initials: "RP",
+    tag: "Root Canal Specialist",
+    name: "Dr. Revathi Palanisamy",
+    quals: "BDS, MDS (Endodontics)",
+    bio: "Specialist endodontist focused on saving natural teeth through comfortable, precise root canal treatment."
+  },
+  {
+    initials: "AB",
+    tag: "Braces & Clear Aligner Specialist",
+    name: "Dr. Abinila",
+    quals: "BDS, MDS (Orthodontics)",
+    bio: "Orthodontic specialist planning braces and aligner treatment with digital precision and long-term stability."
+  },
+  {
+    initials: "BP",
+    tag: "Laser Gum Specialist",
+    name: "Dr. Banupriya",
+    quals: "BDS, MDS (Periodontics)",
+    bio: "Periodontics specialist treating gum health with laser-assisted comfort and preventive care."
+  }
+];
+const equipment = [
+  {
+    badge: "Zolar Photon Plus",
+    name: "Laser Surgery System",
+    body: "Treats gums and soft tissue without cuts. Less pain, minimal bleeding, faster healing than traditional surgical methods.",
+    className: "equip-laser"
+  },
+  {
+    badge: "Intraoral Scanner",
+    name: "3D Digital Tooth Scanner",
+    body: "Maps your teeth in 3D in seconds - no messy impressions, no gagging. Perfect accuracy for crowns, aligners, and implants.",
+    className: "equip-scanner"
+  },
+  {
+    badge: "Acteon Piezotome Cube",
+    name: "Ultrasonic Bone Surgery",
+    body: "Precision bone surgery using sound waves. Less trauma, reduced swelling, and significantly faster recovery for implants and extractions.",
+    className: "equip-piezotome"
+  }
+];
+const gallery = [
+  {
+    src: "/images/reception.jpg",
+    caption: "Reception & Waiting Area"
+  },
+  {
+    src: "/images/treatment-room.jpg",
+    caption: "Treatment Room"
+  },
+  {
+    src: "/images/consultation.jpg",
+    caption: "Consultation Room"
+  },
+  {
+    src: "/images/treatment-room.jpg",
+    caption: "Dental Chair Setup"
+  },
+  {
+    src: "/images/reception.jpg",
+    caption: "Patient Seating Area"
+  },
+  {
+    src: "/images/consultation.jpg",
+    caption: "Doctor's Office"
+  }
+];
+const testimonials = [
+  {
+    quote: "I was terrified of root canals. Dr. Revathi made the entire procedure completely painless. I still cannot believe it was done so quickly.",
+    name: "Priya K. - Coimbatore"
+  },
+  {
+    quote: "Dr. Naveena did my jaw correction surgery. The care before and after was exceptional. The results have truly changed my life and confidence.",
+    name: "Arjun M. - Chennai"
+  },
+  {
+    quote: "My children actually look forward to visiting RKDS. Dr. Arvind is wonderful with kids - every visit is completely stress-free.",
+    name: "Kavitha R. - Coimbatore"
+  }
+];
+const treatmentsForForm = [
+  "Dental Implants",
+  "Root Canal Treatment",
+  "Braces / Clear Aligners",
+  "Smile Designing",
+  "Laser Gum Treatment",
+  "Children's Dentistry",
+  "Face & Jaw Surgery",
+  "Wisdom Tooth",
+  "Teeth Whitening",
+  "Crowns, Bridges & Dentures",
+  "Other / General Query"
+];
+function SectionHeader({
+  label,
+  title,
+  align = "left",
+  dark = false,
+  children
+}) {
+  return /* @__PURE__ */ jsxDEV("div", { className: `section-header ${align === "center" ? "center" : ""}`, children: [
+    /* @__PURE__ */ jsxDEV("span", { className: `eyebrow ${dark ? "white" : ""}`, children: label }, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 246,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("h2", { className: `section-title ${dark ? "white" : ""}`, children: title }, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 247,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "gold-line" }, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 248,
+      columnNumber: 7
+    }, this),
+    children
+  ] }, void 0, true, {
+    fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+    lineNumber: 245,
+    columnNumber: 5
+  }, this);
+}
+_c = SectionHeader;
+function Logo() {
+  return /* @__PURE__ */ jsxDEV(
+    "a",
+    {
+      href: "#hero",
+      className: "brand",
+      "aria-label": "Ramkalyan Dental home",
+      onClick: () => closeDrawerIfNeeded(),
+      children: [
+        /* @__PURE__ */ jsxDEV("span", { className: "logo-mark", children: "RK" }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 262,
+          columnNumber: 7
+        }, this),
+        /* @__PURE__ */ jsxDEV("span", { className: "brand-copy", children: [
+          /* @__PURE__ */ jsxDEV("strong", { children: "RAMKALYAN DENTAL" }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 264,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ jsxDEV("small", { children: "& Face Surgical Clinic" }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 265,
+            columnNumber: 9
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 263,
+          columnNumber: 7
+        }, this)
+      ]
+    },
+    void 0,
+    true,
+    {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 256,
+      columnNumber: 5
+    },
+    this
+  );
+}
+_c2 = Logo;
+function closeDrawerIfNeeded() {
+  document.body.classList.remove("drawer-open");
+}
+function Navbar() {
+  _s();
+  const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [active, setActive] = useState("#hero");
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 80);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+  useEffect(() => {
+    document.body.classList.toggle("drawer-open", open);
+    return () => document.body.classList.remove("drawer-open");
+  }, [open]);
+  useEffect(() => {
+    const sections = ["#hero", ...navLinks.map((link) => link.href)].map((href) => document.querySelector(href)).filter((section) => section !== null);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries.filter((entry) => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+        if (visible?.target.id) setActive(`#${visible.target.id}`);
+      },
+      { rootMargin: "-30% 0px -55% 0px", threshold: [0.08, 0.2, 0.4] }
+    );
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
+  }, []);
+  const handleNav = () => setOpen(false);
+  return /* @__PURE__ */ jsxDEV("nav", { id: "navbar", className: scrolled ? "scrolled" : "", children: [
+    /* @__PURE__ */ jsxDEV(Logo, {}, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 315,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "nav-links", "aria-label": "Primary navigation", children: navLinks.map(
+      (link) => /* @__PURE__ */ jsxDEV(
+        "a",
+        {
+          href: link.href,
+          className: active === link.href ? "active" : "",
+          children: link.label
+        },
+        link.href,
+        false,
+        {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 319,
+          columnNumber: 9
+        },
+        this
+      )
+    ) }, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 317,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "nav-actions", children: [
+      /* @__PURE__ */ jsxDEV("a", { className: "phone-display", href: phoneHref, children: [
+        /* @__PURE__ */ jsxDEV(Phone, { size: 17, "aria-hidden": "true" }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 331,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("span", { children: phoneDisplay }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 332,
+          columnNumber: 11
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 330,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("a", { className: "btn-primary nav-book", href: "#contact", children: "Book Appointment" }, void 0, false, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 334,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(
+        "button",
+        {
+          id: "hamburger",
+          className: "hamburger",
+          type: "button",
+          "aria-label": open ? "Close menu" : "Open menu",
+          "aria-expanded": open,
+          onClick: () => setOpen((value) => !value),
+          children: open ? /* @__PURE__ */ jsxDEV(X, { size: 28 }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 345,
+            columnNumber: 19
+          }, this) : /* @__PURE__ */ jsxDEV(Menu, { size: 28 }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 345,
+            columnNumber: 37
+          }, this)
+        },
+        void 0,
+        false,
+        {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 337,
+          columnNumber: 9
+        },
+        this
+      )
+    ] }, void 0, true, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 329,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("aside", { className: `mobile-drawer ${open ? "open" : ""}`, "aria-hidden": !open, children: [
+      /* @__PURE__ */ jsxDEV(
+        "button",
+        {
+          className: "drawer-close",
+          type: "button",
+          "aria-label": "Close menu",
+          onClick: () => setOpen(false),
+          children: /* @__PURE__ */ jsxDEV(X, { size: 28 }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 356,
+            columnNumber: 11
+          }, this)
+        },
+        void 0,
+        false,
+        {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 350,
+          columnNumber: 9
+        },
+        this
+      ),
+      /* @__PURE__ */ jsxDEV(Logo, {}, void 0, false, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 358,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "drawer-links", children: navLinks.map(
+        (link) => /* @__PURE__ */ jsxDEV(
+          "a",
+          {
+            href: link.href,
+            className: active === link.href ? "active" : "",
+            onClick: handleNav,
+            children: link.label
+          },
+          link.href,
+          false,
+          {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 361,
+            columnNumber: 11
+          },
+          this
+        )
+      ) }, void 0, false, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 359,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("a", { className: "btn-primary drawer-cta", href: "#contact", onClick: handleNav, children: "Book Appointment" }, void 0, false, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 371,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 349,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV(
+      "button",
+      {
+        className: `drawer-scrim ${open ? "open" : ""}`,
+        type: "button",
+        "aria-label": "Close menu overlay",
+        onClick: () => setOpen(false)
+      },
+      void 0,
+      false,
+      {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 375,
+        columnNumber: 7
+      },
+      this
+    )
+  ] }, void 0, true, {
+    fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+    lineNumber: 314,
+    columnNumber: 5
+  }, this);
+}
+_s(Navbar, "x14YVoU4260UsNtXZ+GTH+RZ1lo=");
+_c3 = Navbar;
+function HeroSection() {
+  return /* @__PURE__ */ jsxDEV("section", { id: "hero", children: /* @__PURE__ */ jsxDEV("div", { className: "hero-content", children: [
+    /* @__PURE__ */ jsxDEV("span", { className: "eyebrow white", children: "PAINLESS · LASER-POWERED · SPECIALIST CARE" }, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 389,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ jsxDEV("h1", { children: [
+      "Your Smile Deserves",
+      /* @__PURE__ */ jsxDEV("br", {}, void 0, false, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 392,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV("em", { children: "a Specialist." }, void 0, false, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 393,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 390,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ jsxDEV("p", { className: "hero-sub", children: "40 years of trusted care. 7 specialist doctors. Modern laser-assisted treatments at Coimbatore's most advanced dental and face surgical clinic." }, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 395,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "hero-ctas", children: [
+      /* @__PURE__ */ jsxDEV("a", { href: "#contact", className: "btn-primary", children: "Book Appointment" }, void 0, false, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 400,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV("a", { href: phoneHref, className: "btn-white", children: [
+        "Call: ",
+        phoneDisplay
+      ] }, void 0, true, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 403,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 399,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "hero-badges", children: [
+      "40+ YEARS",
+      "7 SPECIALISTS",
+      "LASER-POWERED",
+      "PAINLESS TREATMENT",
+      "WORLDWIDE PATIENTS"
+    ].map(
+      (badge) => /* @__PURE__ */ jsxDEV("span", { className: "badge", children: badge }, badge, false, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 415,
+        columnNumber: 11
+      }, this)
+    ) }, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 407,
+      columnNumber: 9
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+    lineNumber: 388,
+    columnNumber: 7
+  }, this) }, void 0, false, {
+    fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+    lineNumber: 387,
+    columnNumber: 5
+  }, this);
+}
+_c4 = HeroSection;
+function InfoBar() {
+  return /* @__PURE__ */ jsxDEV("div", { id: "infobar", children: [
+    /* @__PURE__ */ jsxDEV("span", { children: [
+      /* @__PURE__ */ jsxDEV(MapPin, { size: 18, "aria-hidden": "true" }, void 0, false, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 429,
+        columnNumber: 9
+      }, this),
+      "Kurumbapalayam, Coimbatore"
+    ] }, void 0, true, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 428,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("a", { href: phoneHref, children: [
+      /* @__PURE__ */ jsxDEV(Phone, { size: 18, "aria-hidden": "true" }, void 0, false, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 433,
+        columnNumber: 9
+      }, this),
+      phoneDisplay
+    ] }, void 0, true, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 432,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("span", { children: [
+      /* @__PURE__ */ jsxDEV(Clock, { size: 18, "aria-hidden": "true" }, void 0, false, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 437,
+        columnNumber: 9
+      }, this),
+      "10AM-1PM · 5PM-8PM Daily"
+    ] }, void 0, true, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 436,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("a", { href: emailHref, children: [
+      /* @__PURE__ */ jsxDEV(Mail, { size: 18, "aria-hidden": "true" }, void 0, false, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 441,
+        columnNumber: 9
+      }, this),
+      email
+    ] }, void 0, true, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 440,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+    lineNumber: 427,
+    columnNumber: 5
+  }, this);
+}
+_c5 = InfoBar;
+function WhySection() {
+  return /* @__PURE__ */ jsxDEV("section", { id: "why", className: "section stone", children: /* @__PURE__ */ jsxDEV("div", { className: "container", children: [
+    /* @__PURE__ */ jsxDEV(
+      SectionHeader,
+      {
+        label: "WHY CHOOSE US",
+        title: "More Than a Dentist. A Complete Care Team.",
+        align: "center"
+      },
+      void 0,
+      false,
+      {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 452,
+        columnNumber: 9
+      },
+      this
+    ),
+    /* @__PURE__ */ jsxDEV("div", { className: "why-grid", children: whyCards.map((item) => {
+      const Icon = item.icon;
+      return /* @__PURE__ */ jsxDEV(
+        "article",
+        {
+          className: `card why-card ${item.featured ? "featured" : ""}`,
+          children: [
+            /* @__PURE__ */ jsxDEV(Icon, { className: "card-icon", "aria-hidden": "true" }, void 0, false, {
+              fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+              lineNumber: 465,
+              columnNumber: 17
+            }, this),
+            item.stat && /* @__PURE__ */ jsxDEV("span", { className: "why-stat", children: item.stat }, void 0, false, {
+              fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+              lineNumber: 466,
+              columnNumber: 31
+            }, this),
+            /* @__PURE__ */ jsxDEV("h3", { children: item.title }, void 0, false, {
+              fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+              lineNumber: 467,
+              columnNumber: 17
+            }, this),
+            /* @__PURE__ */ jsxDEV("p", { children: item.body }, void 0, false, {
+              fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+              lineNumber: 468,
+              columnNumber: 17
+            }, this)
+          ]
+        },
+        item.title,
+        true,
+        {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 461,
+          columnNumber: 15
+        },
+        this
+      );
+    }) }, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 457,
+      columnNumber: 9
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+    lineNumber: 451,
+    columnNumber: 7
+  }, this) }, void 0, false, {
+    fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+    lineNumber: 450,
+    columnNumber: 5
+  }, this);
+}
+_c6 = WhySection;
+function TreatmentsSection() {
+  return /* @__PURE__ */ jsxDEV("section", { id: "treatments", className: "section white-section", children: /* @__PURE__ */ jsxDEV("div", { className: "container", children: [
+    /* @__PURE__ */ jsxDEV(SectionHeader, { label: "OUR TREATMENTS", title: "Expert Care for Every Dental Need.", children: /* @__PURE__ */ jsxDEV("p", { className: "section-copy", children: "From painless root canals to full smile makeovers - our 7-doctor specialist team has the expertise and technology to help you." }, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 483,
+      columnNumber: 11
+    }, this) }, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 482,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "service-grid", children: services.map((service) => {
+      const Icon = service.icon;
+      return /* @__PURE__ */ jsxDEV("article", { className: "card service-card", children: [
+        /* @__PURE__ */ jsxDEV("div", { className: "service-icon", children: /* @__PURE__ */ jsxDEV(Icon, { "aria-hidden": "true" }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 494,
+          columnNumber: 19
+        }, this) }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 493,
+          columnNumber: 17
+        }, this),
+        /* @__PURE__ */ jsxDEV("h3", { className: "service-title", children: service.title }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 496,
+          columnNumber: 17
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { className: "service-desc", children: service.body }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 497,
+          columnNumber: 17
+        }, this),
+        /* @__PURE__ */ jsxDEV("a", { href: "#contact", className: "service-link", children: "Book This Treatment →" }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 498,
+          columnNumber: 17
+        }, this)
+      ] }, service.title, true, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 492,
+        columnNumber: 15
+      }, this);
+    }) }, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 488,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "center mt-40", children: /* @__PURE__ */ jsxDEV("a", { href: "#contact", className: "btn-primary", children: "Book a Consultation" }, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 506,
+      columnNumber: 11
+    }, this) }, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 505,
+      columnNumber: 9
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+    lineNumber: 481,
+    columnNumber: 7
+  }, this) }, void 0, false, {
+    fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+    lineNumber: 480,
+    columnNumber: 5
+  }, this);
+}
+_c7 = TreatmentsSection;
+function ProcessSection() {
+  return /* @__PURE__ */ jsxDEV("section", { id: "process", className: "section dark-section", children: /* @__PURE__ */ jsxDEV("div", { className: "container", children: [
+    /* @__PURE__ */ jsxDEV(
+      SectionHeader,
+      {
+        label: "THE PROCESS",
+        title: "Getting Care at RKDS is Simple.",
+        align: "center",
+        dark: true
+      },
+      void 0,
+      false,
+      {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 519,
+        columnNumber: 9
+      },
+      this
+    ),
+    /* @__PURE__ */ jsxDEV("div", { className: "process-grid", children: processSteps.map(
+      (step) => /* @__PURE__ */ jsxDEV("article", { className: "process-step", children: [
+        /* @__PURE__ */ jsxDEV("div", { className: "step-number", children: step.num }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 528,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV("h3", { className: "step-title", children: step.title }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 529,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { className: "step-body", children: step.body }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 530,
+          columnNumber: 15
+        }, this)
+      ] }, step.num, true, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 527,
+        columnNumber: 11
+      }, this)
+    ) }, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 525,
+      columnNumber: 9
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+    lineNumber: 518,
+    columnNumber: 7
+  }, this) }, void 0, false, {
+    fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+    lineNumber: 517,
+    columnNumber: 5
+  }, this);
+}
+_c8 = ProcessSection;
+function DoctorsSection() {
+  return /* @__PURE__ */ jsxDEV("section", { id: "doctors", className: "section stone", children: /* @__PURE__ */ jsxDEV("div", { className: "container", children: [
+    /* @__PURE__ */ jsxDEV(SectionHeader, { label: "OUR SPECIALISTS", title: "7 Specialists. One Clinic. Complete Care.", children: /* @__PURE__ */ jsxDEV("p", { className: "section-copy", children: "Every doctor at RKDS holds a postgraduate MDS or equivalent specialist qualification. You are never treated by a general dentist for a specialist problem." }, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 544,
+      columnNumber: 11
+    }, this) }, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 543,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "doctor-grid", children: doctors.map(
+      (doctor) => /* @__PURE__ */ jsxDEV("article", { className: "card doctor-card", children: [
+        /* @__PURE__ */ jsxDEV("div", { className: "doctor-avatar", children: /* @__PURE__ */ jsxDEV("div", { className: "avatar-circle", children: doctor.initials }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 554,
+          columnNumber: 17
+        }, this) }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 553,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "doctor-tag", children: doctor.tag }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 556,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV("h3", { className: "doctor-name", children: doctor.name }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 557,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { className: "doctor-quals", children: doctor.quals }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 558,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { className: "doctor-bio", children: doctor.bio }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 559,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV("a", { href: "#contact", className: "btn-secondary full-width", children: "Book Appointment" }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 560,
+          columnNumber: 15
+        }, this)
+      ] }, doctor.name, true, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 552,
+        columnNumber: 11
+      }, this)
+    ) }, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 550,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ jsxDEV("a", { href: "#contact", className: "text-link team-link", children: "Meet Our Full Team →" }, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 566,
+      columnNumber: 9
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+    lineNumber: 542,
+    columnNumber: 7
+  }, this) }, void 0, false, {
+    fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+    lineNumber: 541,
+    columnNumber: 5
+  }, this);
+}
+_c9 = DoctorsSection;
+function EquipmentSection() {
+  return /* @__PURE__ */ jsxDEV("section", { id: "equipment", className: "section white-section", children: /* @__PURE__ */ jsxDEV("div", { className: "container", children: [
+    /* @__PURE__ */ jsxDEV(SectionHeader, { label: "OUR TECHNOLOGY", title: "Clinic-Grade Equipment You Can Trust.", children: /* @__PURE__ */ jsxDEV("p", { className: "section-copy", children: "We invest in the same technology used by specialist hospitals - so your treatment is precise, comfortable, and delivered to the highest standard." }, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 579,
+      columnNumber: 11
+    }, this) }, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 578,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "equipment-grid", children: equipment.map(
+      (item) => /* @__PURE__ */ jsxDEV("article", { className: "card equipment-card", children: [
+        /* @__PURE__ */ jsxDEV("div", { className: "equip-image-wrap", children: /* @__PURE__ */ jsxDEV("div", { className: `equip-visual ${item.className}` }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 588,
+          columnNumber: 17
+        }, this) }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 587,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "equip-badge", children: item.badge }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 590,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV("h3", { className: "equip-name", children: item.name }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 591,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { className: "equip-desc", children: item.body }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 592,
+          columnNumber: 15
+        }, this)
+      ] }, item.name, true, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 586,
+        columnNumber: 11
+      }, this)
+    ) }, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 584,
+      columnNumber: 9
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+    lineNumber: 577,
+    columnNumber: 7
+  }, this) }, void 0, false, {
+    fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+    lineNumber: 576,
+    columnNumber: 5
+  }, this);
+}
+_c0 = EquipmentSection;
+function GallerySection() {
+  return /* @__PURE__ */ jsxDEV("section", { id: "gallery", className: "section dark-section", children: /* @__PURE__ */ jsxDEV("div", { className: "container", children: [
+    /* @__PURE__ */ jsxDEV(
+      SectionHeader,
+      {
+        label: "INSIDE RKDS",
+        title: "A Space Designed for Your Comfort.",
+        align: "center",
+        dark: true,
+        children: /* @__PURE__ */ jsxDEV("p", { className: "section-copy light center-copy", children: "Our new Coimbatore clinic - expanded treatment rooms, modern seating, and advanced equipment under one roof." }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 611,
+          columnNumber: 11
+        }, this)
+      },
+      void 0,
+      false,
+      {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 605,
+        columnNumber: 9
+      },
+      this
+    ),
+    /* @__PURE__ */ jsxDEV("div", { className: "gallery-grid", children: gallery.map(
+      (item, index) => /* @__PURE__ */ jsxDEV("figure", { className: "gallery-item", children: [
+        /* @__PURE__ */ jsxDEV("img", { src: item.src, alt: item.caption, loading: "lazy" }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 619,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV("figcaption", { className: "gallery-caption", children: item.caption }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 620,
+          columnNumber: 15
+        }, this)
+      ] }, `${item.caption}-${index}`, true, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 618,
+        columnNumber: 11
+      }, this)
+    ) }, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 616,
+      columnNumber: 9
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+    lineNumber: 604,
+    columnNumber: 7
+  }, this) }, void 0, false, {
+    fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+    lineNumber: 603,
+    columnNumber: 5
+  }, this);
+}
+_c1 = GallerySection;
+function TestimonialsSection() {
+  _s2();
+  const [active, setActive] = useState(0);
+  useEffect(() => {
+    const timer = window.setInterval(() => {
+      setActive((value) => (value + 1) % testimonials.length);
+    }, 5e3);
+    return () => window.clearInterval(timer);
+  }, []);
+  const visibleTestimonials = useMemo(
+    () => testimonials.map((_, index) => testimonials[(active + index) % testimonials.length]),
+    [active]
+  );
+  const move = (direction) => {
+    setActive((value) => (value + direction + testimonials.length) % testimonials.length);
+  };
+  return /* @__PURE__ */ jsxDEV("section", { id: "testimonials", className: "section stone", children: /* @__PURE__ */ jsxDEV("div", { className: "container", children: [
+    /* @__PURE__ */ jsxDEV(
+      SectionHeader,
+      {
+        label: "WHAT PATIENTS SAY",
+        title: "Trusted by Families Across Generations.",
+        align: "center"
+      },
+      void 0,
+      false,
+      {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 651,
+        columnNumber: 9
+      },
+      this
+    ),
+    /* @__PURE__ */ jsxDEV("div", { className: "testimonial-shell", children: [
+      /* @__PURE__ */ jsxDEV(
+        "button",
+        {
+          className: "testimonial-arrow",
+          type: "button",
+          "aria-label": "Previous testimonial",
+          onClick: () => move(-1),
+          children: /* @__PURE__ */ jsxDEV(ChevronLeft, { "aria-hidden": "true" }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 663,
+            columnNumber: 13
+          }, this)
+        },
+        void 0,
+        false,
+        {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 657,
+          columnNumber: 11
+        },
+        this
+      ),
+      /* @__PURE__ */ jsxDEV("div", { className: "testimonial-grid", children: visibleTestimonials.map(
+        (testimonial) => /* @__PURE__ */ jsxDEV("article", { className: "testimonial-card card", children: [
+          /* @__PURE__ */ jsxDEV("div", { className: "stars", "aria-label": "5 star review", children: "★★★★★" }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 668,
+            columnNumber: 17
+          }, this),
+          /* @__PURE__ */ jsxDEV("blockquote", { className: "quote", children: [
+            '"',
+            testimonial.quote,
+            '"'
+          ] }, void 0, true, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 671,
+            columnNumber: 17
+          }, this),
+          /* @__PURE__ */ jsxDEV("div", { className: "patient-name", children: testimonial.name }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 672,
+            columnNumber: 17
+          }, this)
+        ] }, testimonial.name, true, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 667,
+          columnNumber: 13
+        }, this)
+      ) }, void 0, false, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 665,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV(
+        "button",
+        {
+          className: "testimonial-arrow",
+          type: "button",
+          "aria-label": "Next testimonial",
+          onClick: () => move(1),
+          children: /* @__PURE__ */ jsxDEV(ChevronRight, { "aria-hidden": "true" }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 682,
+            columnNumber: 13
+          }, this)
+        },
+        void 0,
+        false,
+        {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 676,
+          columnNumber: 11
+        },
+        this
+      )
+    ] }, void 0, true, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 656,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "testimonial-dots", "aria-label": "Choose testimonial", children: testimonials.map(
+      (testimonial, index) => /* @__PURE__ */ jsxDEV(
+        "button",
+        {
+          type: "button",
+          className: index === active ? "active" : "",
+          "aria-label": `Show testimonial ${index + 1}`,
+          onClick: () => setActive(index)
+        },
+        testimonial.name,
+        false,
+        {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 687,
+          columnNumber: 11
+        },
+        this
+      )
+    ) }, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 685,
+      columnNumber: 9
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+    lineNumber: 650,
+    columnNumber: 7
+  }, this) }, void 0, false, {
+    fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+    lineNumber: 649,
+    columnNumber: 5
+  }, this);
+}
+_s2(TestimonialsSection, "bP/OitLBEt8lYhFlIt52dEBu71Y=");
+_c10 = TestimonialsSection;
+function AboutSection() {
+  return /* @__PURE__ */ jsxDEV("section", { id: "about", className: "section white-section", children: /* @__PURE__ */ jsxDEV("div", { className: "container about-grid", children: [
+    /* @__PURE__ */ jsxDEV("div", { children: [
+      /* @__PURE__ */ jsxDEV(SectionHeader, { label: "OUR STORY", title: "Building Trust Since 1984." }, void 0, false, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 706,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "about-copy", children: [
+        /* @__PURE__ */ jsxDEV("p", { children: "Ram Kalyan Clinic was founded in Ooty in 1984 by Lion. Dr. V R Nath - built on the principles of professional care and affordable healthcare for all communities." }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 708,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { children: "The Coimbatore branch opened in 2013, bringing the same commitment to excellence to a growing community. In June 2026, we moved into a spacious, fully modernised clinic in Kurumbapalayam with expanded capacity, a team of 7 specialist doctors, and the most advanced dental equipment in the region." }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 713,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { children: "Today, we serve patients from across India and the world - a testament to our unwavering dedication to quality care." }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 719,
+          columnNumber: 13
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 707,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV("a", { href: "#contact", className: "btn-primary", children: "Book Your Appointment →" }, void 0, false, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 724,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 705,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "about-image-wrap", children: [
+      /* @__PURE__ */ jsxDEV("img", { src: "/images/treatment-room.jpg", alt: "RKDS treatment room", loading: "lazy" }, void 0, false, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 729,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "stat-card", children: [
+        /* @__PURE__ */ jsxDEV("span", { className: "stat-num", children: "40+" }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 731,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("span", { className: "stat-label", children: "Years of Excellence" }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 732,
+          columnNumber: 13
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 730,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 728,
+      columnNumber: 9
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+    lineNumber: 704,
+    columnNumber: 7
+  }, this) }, void 0, false, {
+    fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+    lineNumber: 703,
+    columnNumber: 5
+  }, this);
+}
+_c11 = AboutSection;
+function CtaBanner() {
+  return /* @__PURE__ */ jsxDEV("section", { id: "cta-banner", children: /* @__PURE__ */ jsxDEV("div", { className: "container center", children: [
+    /* @__PURE__ */ jsxDEV("span", { className: "eyebrow white", children: "GET STARTED TODAY" }, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 744,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ jsxDEV("h2", { className: "section-title white cta-title", children: "Ready to Transform Your Smile?" }, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 745,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "gold-line" }, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 746,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ jsxDEV("p", { children: "Our specialists are available every day. Call, WhatsApp, or book online - we guide you from first consultation to final treatment." }, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 747,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "cta-actions", children: [
+      /* @__PURE__ */ jsxDEV("a", { href: "#contact", className: "btn-primary", children: "Book Appointment Online" }, void 0, false, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 752,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV("a", { href: phoneHref, className: "btn-white", children: [
+        "Call ",
+        phoneDisplay
+      ] }, void 0, true, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 755,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 751,
+      columnNumber: 9
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+    lineNumber: 743,
+    columnNumber: 7
+  }, this) }, void 0, false, {
+    fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+    lineNumber: 742,
+    columnNumber: 5
+  }, this);
+}
+_c12 = CtaBanner;
+function ContactSection() {
+  _s3();
+  const [submitted, setSubmitted] = useState(false);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setSubmitted(true);
+    event.currentTarget.reset();
+    window.setTimeout(() => setSubmitted(false), 5e3);
+  };
+  return /* @__PURE__ */ jsxDEV("section", { id: "contact", className: "section stone", children: /* @__PURE__ */ jsxDEV("div", { className: "container", children: [
+    /* @__PURE__ */ jsxDEV(SectionHeader, { label: "REACH US", title: "Book Your Appointment", align: "center" }, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 777,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "contact-grid", children: [
+      /* @__PURE__ */ jsxDEV("form", { className: "appointment-form card", onSubmit: handleSubmit, children: [
+        /* @__PURE__ */ jsxDEV("div", { className: "form-row", children: [
+          /* @__PURE__ */ jsxDEV("div", { className: "form-group", children: [
+            /* @__PURE__ */ jsxDEV("label", { htmlFor: "full-name", children: "Full Name *" }, void 0, false, {
+              fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+              lineNumber: 782,
+              columnNumber: 17
+            }, this),
+            /* @__PURE__ */ jsxDEV("input", { id: "full-name", type: "text", placeholder: "Your full name", required: true }, void 0, false, {
+              fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+              lineNumber: 783,
+              columnNumber: 17
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 781,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("div", { className: "form-group", children: [
+            /* @__PURE__ */ jsxDEV("label", { htmlFor: "phone-number", children: "Phone Number *" }, void 0, false, {
+              fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+              lineNumber: 786,
+              columnNumber: 17
+            }, this),
+            /* @__PURE__ */ jsxDEV("input", { id: "phone-number", type: "tel", placeholder: "+91...", required: true }, void 0, false, {
+              fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+              lineNumber: 787,
+              columnNumber: 17
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 785,
+            columnNumber: 15
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 780,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "form-group", children: [
+          /* @__PURE__ */ jsxDEV("label", { htmlFor: "email-address", children: "Email Address" }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 791,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("input", { id: "email-address", type: "email", placeholder: "you@email.com" }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 792,
+            columnNumber: 15
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 790,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "form-row", children: [
+          /* @__PURE__ */ jsxDEV("div", { className: "form-group", children: [
+            /* @__PURE__ */ jsxDEV("label", { htmlFor: "location", children: "Location *" }, void 0, false, {
+              fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+              lineNumber: 796,
+              columnNumber: 17
+            }, this),
+            /* @__PURE__ */ jsxDEV("select", { id: "location", required: true, defaultValue: "", children: [
+              /* @__PURE__ */ jsxDEV("option", { value: "", children: "Select location" }, void 0, false, {
+                fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+                lineNumber: 798,
+                columnNumber: 19
+              }, this),
+              /* @__PURE__ */ jsxDEV("option", { children: "Coimbatore - Kurumbapalayam" }, void 0, false, {
+                fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+                lineNumber: 799,
+                columnNumber: 19
+              }, this),
+              /* @__PURE__ */ jsxDEV("option", { children: "Ooty" }, void 0, false, {
+                fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+                lineNumber: 800,
+                columnNumber: 19
+              }, this)
+            ] }, void 0, true, {
+              fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+              lineNumber: 797,
+              columnNumber: 17
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 795,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("div", { className: "form-group", children: [
+            /* @__PURE__ */ jsxDEV("label", { htmlFor: "treatment", children: "Treatment Needed *" }, void 0, false, {
+              fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+              lineNumber: 804,
+              columnNumber: 17
+            }, this),
+            /* @__PURE__ */ jsxDEV("select", { id: "treatment", required: true, defaultValue: "", children: [
+              /* @__PURE__ */ jsxDEV("option", { value: "", children: "Select treatment" }, void 0, false, {
+                fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+                lineNumber: 806,
+                columnNumber: 19
+              }, this),
+              treatmentsForForm.map(
+                (treatment) => /* @__PURE__ */ jsxDEV("option", { children: treatment }, treatment, false, {
+                  fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+                  lineNumber: 808,
+                  columnNumber: 19
+                }, this)
+              )
+            ] }, void 0, true, {
+              fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+              lineNumber: 805,
+              columnNumber: 17
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 803,
+            columnNumber: 15
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 794,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "form-group", children: [
+          /* @__PURE__ */ jsxDEV("label", { htmlFor: "message", children: "Message" }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 814,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("textarea", { id: "message", rows: 4, placeholder: "Tell us about your concern..." }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 815,
+            columnNumber: 15
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 813,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("button", { type: "submit", className: "btn-primary form-submit", children: "Submit Appointment Request" }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 817,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { className: "form-note", children: "Walk-ins welcome during clinic hours" }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 820,
+          columnNumber: 13
+        }, this),
+        submitted && /* @__PURE__ */ jsxDEV("p", { className: "success-message", role: "status", children: "Thank you. Your appointment request was received, and our team will contact you shortly." }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 822,
+          columnNumber: 13
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 779,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "location-stack", children: [
+        /* @__PURE__ */ jsxDEV("article", { className: "location-card card", children: [
+          /* @__PURE__ */ jsxDEV("h3", { children: "Coimbatore (Main)" }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 831,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { children: [
+            /* @__PURE__ */ jsxDEV(MapPin, { "aria-hidden": "true" }, void 0, false, {
+              fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+              lineNumber: 833,
+              columnNumber: 17
+            }, this),
+            address
+          ] }, void 0, true, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 832,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { children: [
+            /* @__PURE__ */ jsxDEV(Phone, { "aria-hidden": "true" }, void 0, false, {
+              fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+              lineNumber: 837,
+              columnNumber: 17
+            }, this),
+            /* @__PURE__ */ jsxDEV("a", { href: phoneHref, children: phoneDisplay }, void 0, false, {
+              fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+              lineNumber: 838,
+              columnNumber: 17
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 836,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { children: [
+            /* @__PURE__ */ jsxDEV(Clock, { "aria-hidden": "true" }, void 0, false, {
+              fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+              lineNumber: 841,
+              columnNumber: 17
+            }, this),
+            hours
+          ] }, void 0, true, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 840,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { children: [
+            /* @__PURE__ */ jsxDEV(Mail, { "aria-hidden": "true" }, void 0, false, {
+              fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+              lineNumber: 845,
+              columnNumber: 17
+            }, this),
+            /* @__PURE__ */ jsxDEV("a", { href: emailHref, children: email }, void 0, false, {
+              fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+              lineNumber: 846,
+              columnNumber: 17
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 844,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("a", { href: "https://share.google/8RLpQG17VFcipqnBB", className: "text-link", children: "Open in Google Maps →" }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 848,
+            columnNumber: 15
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 830,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("article", { className: "location-card card", children: [
+          /* @__PURE__ */ jsxDEV("h3", { children: "Ooty" }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 853,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { children: [
+            /* @__PURE__ */ jsxDEV(MapPin, { "aria-hidden": "true" }, void 0, false, {
+              fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+              lineNumber: 855,
+              columnNumber: 17
+            }, this),
+            "Krishnammal Apartments, Bandlane, Old Liberty Theatre Backside, Ooty - 643 001"
+          ] }, void 0, true, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 854,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { children: [
+            /* @__PURE__ */ jsxDEV(Phone, { "aria-hidden": "true" }, void 0, false, {
+              fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+              lineNumber: 860,
+              columnNumber: 17
+            }, this),
+            /* @__PURE__ */ jsxDEV("a", { href: phoneHref, children: phoneDisplay }, void 0, false, {
+              fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+              lineNumber: 861,
+              columnNumber: 17
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 859,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("p", { children: [
+            /* @__PURE__ */ jsxDEV(Clock, { "aria-hidden": "true" }, void 0, false, {
+              fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+              lineNumber: 864,
+              columnNumber: 17
+            }, this),
+            hours
+          ] }, void 0, true, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 863,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("a", { href: "https://maps.app.goo.gl/6GhJYsL6HZh73Yco8", className: "text-link", children: "Open in Google Maps →" }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 867,
+            columnNumber: 15
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 852,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("a", { href: whatsappHref, className: "btn-primary whatsapp-button", children: [
+          /* @__PURE__ */ jsxDEV(MessageCircle, { size: 18, "aria-hidden": "true" }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 872,
+            columnNumber: 15
+          }, this),
+          "Chat on WhatsApp"
+        ] }, void 0, true, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 871,
+          columnNumber: 13
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 829,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 778,
+      columnNumber: 9
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+    lineNumber: 776,
+    columnNumber: 7
+  }, this) }, void 0, false, {
+    fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+    lineNumber: 775,
+    columnNumber: 5
+  }, this);
+}
+_s3(ContactSection, "S6ipnhtDax9I0+B/fnlVz3+f6e8=");
+_c13 = ContactSection;
+function FooterSection() {
+  return /* @__PURE__ */ jsxDEV("footer", { id: "footer", children: /* @__PURE__ */ jsxDEV("div", { className: "container", children: [
+    /* @__PURE__ */ jsxDEV("div", { className: "footer-grid", children: [
+      /* @__PURE__ */ jsxDEV("div", { children: [
+        /* @__PURE__ */ jsxDEV(Logo, {}, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 888,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { className: "footer-tagline", children: "Painless Dental Clinic" }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 889,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { className: "footer-subtag", children: "Advanced LASER, IMPLANT & COSMETIC SMILE CENTER" }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 890,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { className: "footer-group", children: "Part of Ram Kalyan Group of Clinics" }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 891,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { className: "footer-muted", children: "Dental & Face Surgery · Diabetes Care · General Healthcare · Sexology" }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 892,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "social-links", children: [
+          /* @__PURE__ */ jsxDEV("a", { href: "#", "aria-label": "Instagram", children: /* @__PURE__ */ jsxDEV(Instagram, { size: 18 }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 897,
+            columnNumber: 17
+          }, this) }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 896,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("a", { href: "#", "aria-label": "Facebook", children: /* @__PURE__ */ jsxDEV(Facebook, { size: 18 }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 900,
+            columnNumber: 17
+          }, this) }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 899,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("a", { href: "#", "aria-label": "YouTube", children: /* @__PURE__ */ jsxDEV(Youtube, { size: 18 }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 903,
+            columnNumber: 17
+          }, this) }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 902,
+            columnNumber: 15
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 895,
+          columnNumber: 13
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 887,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { children: [
+        /* @__PURE__ */ jsxDEV("h3", { children: "Quick Links" }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 908,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "footer-links", children: [
+          /* @__PURE__ */ jsxDEV("a", { href: "#hero", children: "Home" }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 910,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("a", { href: "#treatments", children: "Treatments" }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 911,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("a", { href: "#doctors", children: "Doctors" }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 912,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("a", { href: "#equipment", children: "Equipment" }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 913,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("a", { href: "#about", children: "About" }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 914,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("a", { href: "#contact", children: "Contact" }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 915,
+            columnNumber: 15
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 909,
+          columnNumber: 13
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 907,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { children: [
+        /* @__PURE__ */ jsxDEV("h3", { children: "Get in Touch" }, void 0, false, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 919,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "footer-contact", children: [
+          /* @__PURE__ */ jsxDEV("a", { href: phoneHref, children: phoneDisplay }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 921,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("a", { href: emailHref, children: email }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 922,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { children: "10AM-1PM · 5PM-8PM Daily" }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 923,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { children: "Unit 1: Kurumbapalayam, Coimbatore 641 107" }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 924,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { children: "Unit 2: Ooty 643 001" }, void 0, false, {
+            fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+            lineNumber: 925,
+            columnNumber: 15
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+          lineNumber: 920,
+          columnNumber: 13
+        }, this)
+      ] }, void 0, true, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 918,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 886,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "footer-bottom", children: [
+      /* @__PURE__ */ jsxDEV("span", { children: "© 2025 Ramkalyan Dental & Face Surgical Clinic. All Rights Reserved." }, void 0, false, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 930,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV("span", { children: "Coimbatore · Ooty · Chennai" }, void 0, false, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 931,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 929,
+      columnNumber: 9
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+    lineNumber: 885,
+    columnNumber: 7
+  }, this) }, void 0, false, {
+    fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+    lineNumber: 884,
+    columnNumber: 5
+  }, this);
+}
+_c14 = FooterSection;
+function FloatingActions() {
+  _s4();
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    const onScroll = () => setVisible(window.scrollY > 300);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+  return /* @__PURE__ */ jsxDEV(Fragment, { children: [
+    /* @__PURE__ */ jsxDEV("a", { id: "whatsapp-fab", href: whatsappHref, "aria-label": "Chat on WhatsApp", children: /* @__PURE__ */ jsxDEV(MessageCircle, { "aria-hidden": "true" }, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 951,
+      columnNumber: 9
+    }, this) }, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 950,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV(
+      "button",
+      {
+        id: "back-to-top",
+        className: visible ? "visible" : "",
+        type: "button",
+        "aria-label": "Back to top",
+        onClick: () => window.scrollTo({ top: 0, behavior: "smooth" }),
+        children: "↑"
+      },
+      void 0,
+      false,
+      {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 953,
+        columnNumber: 7
+      },
+      this
+    )
+  ] }, void 0, true, {
+    fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+    lineNumber: 949,
+    columnNumber: 5
+  }, this);
+}
+_s4(FloatingActions, "cz/DzCD06IMMsoBJ0A1IgCy1P5M=");
+_c15 = FloatingActions;
+function App() {
+  _s5();
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in-view");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+    document.querySelectorAll(".card, .process-step, .section-header, .gallery-item, .doctor-card").forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
+  return /* @__PURE__ */ jsxDEV(Fragment, { children: [
+    /* @__PURE__ */ jsxDEV(Navbar, {}, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 989,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("main", { children: [
+      /* @__PURE__ */ jsxDEV(HeroSection, {}, void 0, false, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 991,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(InfoBar, {}, void 0, false, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 992,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(WhySection, {}, void 0, false, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 993,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(TreatmentsSection, {}, void 0, false, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 994,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(ProcessSection, {}, void 0, false, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 995,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(DoctorsSection, {}, void 0, false, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 996,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(EquipmentSection, {}, void 0, false, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 997,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(GallerySection, {}, void 0, false, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 998,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(TestimonialsSection, {}, void 0, false, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 999,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(AboutSection, {}, void 0, false, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 1e3,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(CtaBanner, {}, void 0, false, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 1001,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(ContactSection, {}, void 0, false, {
+        fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+        lineNumber: 1002,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 990,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV(FooterSection, {}, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 1004,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV(FloatingActions, {}, void 0, false, {
+      fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+      lineNumber: 1005,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx",
+    lineNumber: 988,
+    columnNumber: 5
+  }, this);
+}
+_s5(App, "OD7bBpZva5O2jO+Puf00hKivP7c=");
+_c16 = App;
+export default App;
+var _c, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9, _c0, _c1, _c10, _c11, _c12, _c13, _c14, _c15, _c16;
+$RefreshReg$(_c, "SectionHeader");
+$RefreshReg$(_c2, "Logo");
+$RefreshReg$(_c3, "Navbar");
+$RefreshReg$(_c4, "HeroSection");
+$RefreshReg$(_c5, "InfoBar");
+$RefreshReg$(_c6, "WhySection");
+$RefreshReg$(_c7, "TreatmentsSection");
+$RefreshReg$(_c8, "ProcessSection");
+$RefreshReg$(_c9, "DoctorsSection");
+$RefreshReg$(_c0, "EquipmentSection");
+$RefreshReg$(_c1, "GallerySection");
+$RefreshReg$(_c10, "TestimonialsSection");
+$RefreshReg$(_c11, "AboutSection");
+$RefreshReg$(_c12, "CtaBanner");
+$RefreshReg$(_c13, "ContactSection");
+$RefreshReg$(_c14, "FooterSection");
+$RefreshReg$(_c15, "FloatingActions");
+$RefreshReg$(_c16, "App");
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+function $RefreshReg$(type, id) {
+  return RefreshRuntime.register(type, "C:/Users/Abishek/Downloads/Kimi_Agent_RKDS Dental Site Design/app/src/App.tsx " + id);
+}
+function $RefreshSig$() {
+  return RefreshRuntime.createSignatureFunctionForTransform();
+}
+
+//# sourceMappingURL=data:application/json;base64,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QUFBQSxhQUFBMEcsS0FBQTtBQUFBLGFBQUE3RCxLQUFBO0FBQUEsYUFBQUUsS0FBQTtBQUFBLGFBQUFJLEtBQUE7QUFBQSxhQUFBRyxLQUFBO0FBQUEsYUFBQUcsS0FBQTtBQUFBLGFBQUFHLEtBQUE7QUFBQSxhQUFBRSxLQUFBO0FBQUEsYUFBQUcsS0FBQTtBQUFBLGFBQUEwQyxNQUFBO0FBQUEsYUFBQTdCLE1BQUE7QUFBQSxhQUFBRSxNQUFBO0FBQUEsYUFBQTRCLE1BQUE7QUFBQSxhQUFBZixNQUFBO0FBQUEsYUFBQWdCLE1BQUE7QUFBQSxhQUFBQyxNQUFBIiwibmFtZXMiOlsidXNlRWZmZWN0IiwidXNlTWVtbyIsInVzZVN0YXRlIiwiQnJhY2VzIiwiQ2hldnJvbkxlZnQiLCJDaGV2cm9uUmlnaHQiLCJDbG9jayIsIkZhY2Vib29rIiwiR2xvYmUyIiwiSGVhcnQiLCJJbnN0YWdyYW0iLCJNYWlsIiwiTWFwUGluIiwiTWVudSIsIk1lc3NhZ2VDaXJjbGUiLCJQaG9uZSIsIlNoaWVsZENoZWNrIiwiU21pbGVQbHVzIiwiU3BhcmtsZXMiLCJTdGV0aG9zY29wZSIsIlRhZyIsIldhbmRTcGFya2xlcyIsIlgiLCJZb3V0dWJlIiwiWmFwIiwicGhvbmVEaXNwbGF5IiwicGhvbmVIcmVmIiwid2hhdHNhcHBIcmVmIiwiZW1haWwiLCJlbWFpbEhyZWYiLCJob3VycyIsImFkZHJlc3MiLCJuYXZMaW5rcyIsImxhYmVsIiwiaHJlZiIsIndoeUNhcmRzIiwidGl0bGUiLCJzdGF0IiwiYm9keSIsImljb24iLCJmZWF0dXJlZCIsInNlcnZpY2VzIiwicHJvY2Vzc1N0ZXBzIiwibnVtIiwiZG9jdG9ycyIsImluaXRpYWxzIiwidGFnIiwibmFtZSIsInF1YWxzIiwiYmlvIiwiZXF1aXBtZW50IiwiYmFkZ2UiLCJjbGFzc05hbWUiLCJnYWxsZXJ5Iiwic3JjIiwiY2FwdGlvbiIsInRlc3RpbW9uaWFscyIsInF1b3RlIiwidHJlYXRtZW50c0ZvckZvcm0iLCJTZWN0aW9uSGVhZGVyIiwiYWxpZ24iLCJkYXJrIiwiY2hpbGRyZW4iLCJfYyIsIkxvZ28iLCJjbG9zZURyYXdlcklmTmVlZGVkIiwiX2MyIiwiZG9jdW1lbnQiLCJjbGFzc0xpc3QiLCJyZW1vdmUiLCJOYXZiYXIiLCJfcyIsInNjcm9sbGVkIiwic2V0U2Nyb2xsZWQiLCJvcGVuIiwic2V0T3BlbiIsImFjdGl2ZSIsInNldEFjdGl2ZSIsIm9uU2Nyb2xsIiwid2luZG93Iiwic2Nyb2xsWSIsImFkZEV2ZW50TGlzdGVuZXIiLCJwYXNzaXZlIiwicmVtb3ZlRXZlbnRMaXN0ZW5lciIsInRvZ2dsZSIsInNlY3Rpb25zIiwibWFwIiwibGluayIsInF1ZXJ5U2VsZWN0b3IiLCJmaWx0ZXIiLCJzZWN0aW9uIiwib2JzZXJ2ZXIiLCJJbnRlcnNlY3Rpb25PYnNlcnZlciIsImVudHJpZXMiLCJ2aXNpYmxlIiwiZW50cnkiLCJpc0ludGVyc2VjdGluZyIsInNvcnQiLCJhIiwiYiIsImludGVyc2VjdGlvblJhdGlvIiwidGFyZ2V0IiwiaWQiLCJyb290TWFyZ2luIiwidGhyZXNob2xkIiwiZm9yRWFjaCIsIm9ic2VydmUiLCJkaXNjb25uZWN0IiwiaGFuZGxlTmF2IiwidmFsdWUiLCJIZXJvU2VjdGlvbiIsIl9jNCIsIkluZm9CYXIiLCJfYzUiLCJXaHlTZWN0aW9uIiwiaXRlbSIsIkljb24iLCJfYzYiLCJUcmVhdG1lbnRzU2VjdGlvbiIsInNlcnZpY2UiLCJfYzciLCJQcm9jZXNzU2VjdGlvbiIsInN0ZXAiLCJfYzgiLCJEb2N0b3JzU2VjdGlvbiIsImRvY3RvciIsIl9jOSIsIkVxdWlwbWVudFNlY3Rpb24iLCJfYzAiLCJHYWxsZXJ5U2VjdGlvbiIsImluZGV4IiwiX2MxIiwiVGVzdGltb25pYWxzU2VjdGlvbiIsIl9zMiIsInRpbWVyIiwic2V0SW50ZXJ2YWwiLCJsZW5ndGgiLCJjbGVhckludGVydmFsIiwidmlzaWJsZVRlc3RpbW9uaWFscyIsIl8iLCJtb3ZlIiwiZGlyZWN0aW9uIiwidGVzdGltb25pYWwiLCJBYm91dFNlY3Rpb24iLCJfYzExIiwiQ3RhQmFubmVyIiwiX2MxMiIsIkNvbnRhY3RTZWN0aW9uIiwiX3MzIiwic3VibWl0dGVkIiwic2V0U3VibWl0dGVkIiwiaGFuZGxlU3VibWl0IiwiZXZlbnQiLCJwcmV2ZW50RGVmYXVsdCIsImN1cnJlbnRUYXJnZXQiLCJyZXNldCIsInNldFRpbWVvdXQiLCJ0cmVhdG1lbnQiLCJGb290ZXJTZWN0aW9uIiwiX2MxNCIsIkZsb2F0aW5nQWN0aW9ucyIsIl9zNCIsInNldFZpc2libGUiLCJzY3JvbGxUbyIsInRvcCIsImJlaGF2aW9yIiwiQXBwIiwiX3M1IiwiYWRkIiwidW5vYnNlcnZlIiwicXVlcnlTZWxlY3RvckFsbCIsImVsIiwiX2MzIiwiX2MxMCIsIl9jMTMiLCJfYzE1IiwiX2MxNiJdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlcyI6WyJBcHAudHN4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IHVzZUVmZmVjdCwgdXNlTWVtbywgdXNlU3RhdGUsIHR5cGUgRm9ybUV2ZW50LCB0eXBlIFJlYWN0Tm9kZSB9IGZyb20gJ3JlYWN0JztcbmltcG9ydCB7XG4gIEJyYWNlcyxcbiAgQ2hldnJvbkxlZnQsXG4gIENoZXZyb25SaWdodCxcbiAgQ2xvY2ssXG4gIEZhY2Vib29rLFxuICBHbG9iZTIsXG4gIEhlYXJ0LFxuICBJbnN0YWdyYW0sXG4gIE1haWwsXG4gIE1hcFBpbixcbiAgTWVudSxcbiAgTWVzc2FnZUNpcmNsZSxcbiAgUGhvbmUsXG4gIFNoaWVsZENoZWNrLFxuICBTbWlsZVBsdXMsXG4gIFNwYXJrbGVzLFxuICBTdGV0aG9zY29wZSxcbiAgVGFnLFxuICBXYW5kU3BhcmtsZXMsXG4gIFgsXG4gIFlvdXR1YmUsXG4gIFphcCxcbn0gZnJvbSAnbHVjaWRlLXJlYWN0JztcblxuY29uc3QgcGhvbmVEaXNwbGF5ID0gJys5MSA5OTk0NCA2MjA5NCc7XG5jb25zdCBwaG9uZUhyZWYgPSAndGVsOis5MTk5OTQ0NjIwOTQnO1xuY29uc3Qgd2hhdHNhcHBIcmVmID0gJ2h0dHBzOi8vd2EubWUvOTE5OTk0NDYyMDk0JztcbmNvbnN0IGVtYWlsID0gJ2RybmF2ZWVuYXJhbW5hdGhAZ21haWwuY29tJztcbmNvbnN0IGVtYWlsSHJlZiA9IGBtYWlsdG86JHtlbWFpbH1gO1xuY29uc3QgaG91cnMgPSAnMTA6MDAgQU0gLSAxOjAwIFBNIGFuZCA1OjAwIFBNIC0gODowMCBQTSAoRGFpbHkpJztcbmNvbnN0IGFkZHJlc3MgPVxuICAnVmFpeWFwdXJpIE5hZ2FyLCBTTlMgQ29sbGVnZSBCdXMgU3RvcCwgS3VydW1iYXBhbGF5YW0sIENvaW1iYXRvcmUgLSA2NDEgMTA3JztcblxuY29uc3QgbmF2TGlua3MgPSBbXG4gIHsgbGFiZWw6ICdUcmVhdG1lbnRzJywgaHJlZjogJyN0cmVhdG1lbnRzJyB9LFxuICB7IGxhYmVsOiAnRG9jdG9ycycsIGhyZWY6ICcjZG9jdG9ycycgfSxcbiAgeyBsYWJlbDogJ0VxdWlwbWVudCcsIGhyZWY6ICcjZXF1aXBtZW50JyB9LFxuICB7IGxhYmVsOiAnQWJvdXQnLCBocmVmOiAnI2Fib3V0JyB9LFxuICB7IGxhYmVsOiAnQ29udGFjdCcsIGhyZWY6ICcjY29udGFjdCcgfSxcbl07XG5cbmNvbnN0IHdoeUNhcmRzID0gW1xuICB7XG4gICAgdGl0bGU6ICdZZWFycyBvZiBUcnVzdGVkIENhcmUnLFxuICAgIHN0YXQ6ICc0MCsnLFxuICAgIGJvZHk6ICdTZXJ2aW5nIHBhdGllbnRzIHNpbmNlIDE5ODQgLSBpbiBPb3R5LCBDb2ltYmF0b3JlLCBhbmQgYmV5b25kLiBCdWlsdCBvbiBwcm9mZXNzaW9uYWwgY2FyZSBhbmQgYWZmb3JkYWJsZSBoZWFsdGhjYXJlIGZvciBhbGwuJyxcbiAgICBpY29uOiBTaGllbGRDaGVjayxcbiAgICBmZWF0dXJlZDogdHJ1ZSxcbiAgfSxcbiAge1xuICAgIHRpdGxlOiAnUGFpbmxlc3MgVHJlYXRtZW50JyxcbiAgICBib2R5OiAnQWR2YW5jZWQgbGFzZXIgdGVjaG5vbG9neSBtZWFucyBtb3N0IHByb2NlZHVyZXMgYXJlIGNvbXBsZXRlZCB3aXRob3V0IGRpc2NvbWZvcnQuIEV4cGVyaWVuY2UgZGVudGlzdHJ5IHRoYXQgcHJpb3JpdGlzZXMgeW91ciBjb21mb3J0LicsXG4gICAgaWNvbjogWmFwLFxuICB9LFxuICB7XG4gICAgdGl0bGU6ICdXb3JsZHdpZGUgUGF0aWVudHMnLFxuICAgIGJvZHk6ICdQYXRpZW50cyBmcm9tIGFjcm9zcyBJbmRpYSBhbmQgYWJyb2FkIGNob29zZSBSS0RTIGZvciBzcGVjaWFsaXN0LWxldmVsIGNhcmUgYW5kIGFkdmFuY2VkIHRlY2hub2xvZ3kuJyxcbiAgICBpY29uOiBHbG9iZTIsXG4gIH0sXG4gIHtcbiAgICB0aXRsZTogJ0FmZm9yZGFibGUgUXVhbGl0eScsXG4gICAgYm9keTogJ0V4cGVydCBzcGVjaWFsaXN0IGNhcmUgYXQgYSBwcmljZSB0aGF0IGlzIGhvbmVzdCwgdHJhbnNwYXJlbnQsIGFuZCBmYWlyLicsXG4gICAgaWNvbjogVGFnLFxuICB9LFxuXTtcblxuY29uc3Qgc2VydmljZXMgPSBbXG4gIHtcbiAgICB0aXRsZTogJ0RlbnRhbCBJbXBsYW50cycsXG4gICAgYm9keTogJ1JlcGxhY2UgbWlzc2luZyB0ZWV0aCB3aXRoIGEgcGVybWFuZW50LCBuYXR1cmFsLWxvb2tpbmcgc29sdXRpb24gcGxhY2VkIGJ5IGEgY2VydGlmaWVkIGltcGxhbnQgc3BlY2lhbGlzdCB1c2luZyB1bHRyYXNvbmljIHN1cmdpY2FsIHRlY2hub2xvZ3kuJyxcbiAgICBpY29uOiBTbWlsZVBsdXMsXG4gIH0sXG4gIHtcbiAgICB0aXRsZTogJ1Jvb3QgQ2FuYWwgVHJlYXRtZW50JyxcbiAgICBib2R5OiAnV2UgcmVtb3ZlIGluZmVjdGlvbiBhbmQgc2F2ZSB5b3VyIHRvb3RoIGNvbWZvcnRhYmx5LiBPdXIgc3BlY2lhbGlzdCBlbmRvZG9udGlzdHMgdXNlIGxhc2VyLWFzc2lzdGVkIHRlY2huaXF1ZXMgZm9yIGEgcGFpbmxlc3MgcHJvY2VkdXJlLicsXG4gICAgaWNvbjogU3RldGhvc2NvcGUsXG4gIH0sXG4gIHtcbiAgICB0aXRsZTogJ0JyYWNlcyAmIENsZWFyIEFsaWduZXJzJyxcbiAgICBib2R5OiAnU3RyYWlnaHRlbiB0ZWV0aCB3aXRoIHRyYWRpdGlvbmFsIGJyYWNlcyBvciBuZWFyLWludmlzaWJsZSB0cmF5cywgcGxhbm5lZCB1c2luZyAzRCBkaWdpdGFsIHNjYW5uaW5nIGZvciBwcmVjaXNlIGFsaWdubWVudC4nLFxuICAgIGljb246IEJyYWNlcyxcbiAgfSxcbiAge1xuICAgIHRpdGxlOiAnU21pbGUgRGVzaWduaW5nJyxcbiAgICBib2R5OiAnQSBjb21wbGV0ZSBzbWlsZSBtYWtlb3ZlciB1c2luZyB2ZW5lZXJzLCBjcm93bnMsIHdoaXRlbmluZywgYW5kIGd1bSBjb3JyZWN0aW9uLiBZb3VyIGRyZWFtIHNtaWxlLCBkZXNpZ25lZCBieSBhIHByb3N0aG9kb250aWNzIHNwZWNpYWxpc3QuJyxcbiAgICBpY29uOiBTcGFya2xlcyxcbiAgfSxcbiAge1xuICAgIHRpdGxlOiAnTGFzZXIgR3VtIFRyZWF0bWVudCcsXG4gICAgYm9keTogJ1RyZWF0IGd1bSBkaXNlYXNlIHdpdGggb3VyIFpvbGFyIGRpb2RlIGxhc2VyIC0gbm8gY3V0cywgbm8gc3RpdGNoZXMsIG1pbmltYWwgYmxlZWRpbmcsIGFuZCBkcmFtYXRpY2FsbHkgZmFzdGVyIGhlYWxpbmcuJyxcbiAgICBpY29uOiBXYW5kU3BhcmtsZXMsXG4gIH0sXG4gIHtcbiAgICB0aXRsZTogXCJDaGlsZHJlbidzIERlbnRpc3RyeVwiLFxuICAgIGJvZHk6ICdHZW50bGUsIHNwZWNpYWxpc3QgZGVudGFsIGNhcmUgZm9yIGNoaWxkcmVuLiBPdXIgcGFlZGlhdHJpYyBzcGVjaWFsaXN0IGNyZWF0ZXMgYSBmZWFyLWZyZWUgZW52aXJvbm1lbnQgdGhhdCBraWRzIGFjdHVhbGx5IGVuam95LicsXG4gICAgaWNvbjogSGVhcnQsXG4gIH0sXG5dO1xuXG5jb25zdCBwcm9jZXNzU3RlcHMgPSBbXG4gIHtcbiAgICBudW06ICcwMScsXG4gICAgdGl0bGU6ICdCb29rIG9yIENhbGwnLFxuICAgIGJvZHk6ICdDaG9vc2UgYSBjb252ZW5pZW50IHRpbWUgb25saW5lLCBjYWxsIHVzIGRpcmVjdGx5LCBvciBXaGF0c0FwcC4gV2UgY29uZmlybSB5b3VyIGFwcG9pbnRtZW50IHdpdGhpbiBtaW51dGVzLicsXG4gIH0sXG4gIHtcbiAgICBudW06ICcwMicsXG4gICAgdGl0bGU6ICdNZWV0IFlvdXIgU3BlY2lhbGlzdCcsXG4gICAgYm9keTogJ1lvdSB3aWxsIGNvbnN1bHQgd2l0aCBhIGRlZGljYXRlZCBNRFMgc3BlY2lhbGlzdCwgbm90IGEgZ2VuZXJhbCBkZW50aXN0LiBXZSBleHBsYWluIGV2ZXJ5IG9wdGlvbiBjbGVhcmx5IGJlZm9yZSB3ZSBiZWdpbi4nLFxuICB9LFxuICB7XG4gICAgbnVtOiAnMDMnLFxuICAgIHRpdGxlOiAnVHJlYXRtZW50LCBDb21mb3J0YWJseSBEb25lJyxcbiAgICBib2R5OiAnWW91ciBwcm9jZWR1cmUgaXMgcGVyZm9ybWVkIHdpdGggbGFzZXIgYW5kIGRpZ2l0YWwgZXF1aXBtZW50IGJ5IGEgcXVhbGlmaWVkIHNwZWNpYWxpc3QuIE1vc3QgdHJlYXRtZW50cyBhcmUgcGFpbmxlc3MuJyxcbiAgfSxcbl07XG5cbmNvbnN0IGRvY3RvcnMgPSBbXG4gIHtcbiAgICBpbml0aWFsczogJ05SJyxcbiAgICB0YWc6ICdGYWNlICYgSmF3IFN1cmdlb24nLFxuICAgIG5hbWU6ICdEci4gTmF2ZWVuYSBSYW1uYXRoJyxcbiAgICBxdWFsczogJ0JEUywgTURTIChPTUZTKSwgSURFQSAoSW1wbGFudG9sb2d5KSwgQUFEIChPcnRobyksIE0uU2MgUHN5Y2hvbG9neScsXG4gICAgYmlvOiAnTGVhZGluZyBmYWNpb21heGlsbGFyeSBzdXJnZW9uIHdpdGggZXhwZXJ0aXNlIGluIGphdyBjb3JyZWN0aW9ucywgZmFjaWFsIHN1cmdlcnksIGFuZCBkZW50YWwgaW1wbGFudHMuJyxcbiAgfSxcbiAge1xuICAgIGluaXRpYWxzOiAnUlAnLFxuICAgIHRhZzogJ1Jvb3QgQ2FuYWwgU3BlY2lhbGlzdCcsXG4gICAgbmFtZTogJ0RyLiBSZXZhdGhpIFBhbGFuaXNhbXknLFxuICAgIHF1YWxzOiAnQkRTLCBNRFMgKEVuZG9kb250aWNzKScsXG4gICAgYmlvOiAnU3BlY2lhbGlzdCBlbmRvZG9udGlzdCBmb2N1c2VkIG9uIHNhdmluZyBuYXR1cmFsIHRlZXRoIHRocm91Z2ggY29tZm9ydGFibGUsIHByZWNpc2Ugcm9vdCBjYW5hbCB0cmVhdG1lbnQuJyxcbiAgfSxcbiAge1xuICAgIGluaXRpYWxzOiAnQUInLFxuICAgIHRhZzogJ0JyYWNlcyAmIENsZWFyIEFsaWduZXIgU3BlY2lhbGlzdCcsXG4gICAgbmFtZTogJ0RyLiBBYmluaWxhJyxcbiAgICBxdWFsczogJ0JEUywgTURTIChPcnRob2RvbnRpY3MpJyxcbiAgICBiaW86ICdPcnRob2RvbnRpYyBzcGVjaWFsaXN0IHBsYW5uaW5nIGJyYWNlcyBhbmQgYWxpZ25lciB0cmVhdG1lbnQgd2l0aCBkaWdpdGFsIHByZWNpc2lvbiBhbmQgbG9uZy10ZXJtIHN0YWJpbGl0eS4nLFxuICB9LFxuICB7XG4gICAgaW5pdGlhbHM6ICdCUCcsXG4gICAgdGFnOiAnTGFzZXIgR3VtIFNwZWNpYWxpc3QnLFxuICAgIG5hbWU6ICdEci4gQmFudXByaXlhJyxcbiAgICBxdWFsczogJ0JEUywgTURTIChQZXJpb2RvbnRpY3MpJyxcbiAgICBiaW86ICdQZXJpb2RvbnRpY3Mgc3BlY2lhbGlzdCB0cmVhdGluZyBndW0gaGVhbHRoIHdpdGggbGFzZXItYXNzaXN0ZWQgY29tZm9ydCBhbmQgcHJldmVudGl2ZSBjYXJlLicsXG4gIH0sXG5dO1xuXG5jb25zdCBlcXVpcG1lbnQgPSBbXG4gIHtcbiAgICBiYWRnZTogJ1pvbGFyIFBob3RvbiBQbHVzJyxcbiAgICBuYW1lOiAnTGFzZXIgU3VyZ2VyeSBTeXN0ZW0nLFxuICAgIGJvZHk6ICdUcmVhdHMgZ3VtcyBhbmQgc29mdCB0aXNzdWUgd2l0aG91dCBjdXRzLiBMZXNzIHBhaW4sIG1pbmltYWwgYmxlZWRpbmcsIGZhc3RlciBoZWFsaW5nIHRoYW4gdHJhZGl0aW9uYWwgc3VyZ2ljYWwgbWV0aG9kcy4nLFxuICAgIGNsYXNzTmFtZTogJ2VxdWlwLWxhc2VyJyxcbiAgfSxcbiAge1xuICAgIGJhZGdlOiAnSW50cmFvcmFsIFNjYW5uZXInLFxuICAgIG5hbWU6ICczRCBEaWdpdGFsIFRvb3RoIFNjYW5uZXInLFxuICAgIGJvZHk6ICdNYXBzIHlvdXIgdGVldGggaW4gM0QgaW4gc2Vjb25kcyAtIG5vIG1lc3N5IGltcHJlc3Npb25zLCBubyBnYWdnaW5nLiBQZXJmZWN0IGFjY3VyYWN5IGZvciBjcm93bnMsIGFsaWduZXJzLCBhbmQgaW1wbGFudHMuJyxcbiAgICBjbGFzc05hbWU6ICdlcXVpcC1zY2FubmVyJyxcbiAgfSxcbiAge1xuICAgIGJhZGdlOiAnQWN0ZW9uIFBpZXpvdG9tZSBDdWJlJyxcbiAgICBuYW1lOiAnVWx0cmFzb25pYyBCb25lIFN1cmdlcnknLFxuICAgIGJvZHk6ICdQcmVjaXNpb24gYm9uZSBzdXJnZXJ5IHVzaW5nIHNvdW5kIHdhdmVzLiBMZXNzIHRyYXVtYSwgcmVkdWNlZCBzd2VsbGluZywgYW5kIHNpZ25pZmljYW50bHkgZmFzdGVyIHJlY292ZXJ5IGZvciBpbXBsYW50cyBhbmQgZXh0cmFjdGlvbnMuJyxcbiAgICBjbGFzc05hbWU6ICdlcXVpcC1waWV6b3RvbWUnLFxuICB9LFxuXTtcblxuY29uc3QgZ2FsbGVyeSA9IFtcbiAge1xuICAgIHNyYzogJy9pbWFnZXMvcmVjZXB0aW9uLmpwZycsXG4gICAgY2FwdGlvbjogJ1JlY2VwdGlvbiAmIFdhaXRpbmcgQXJlYScsXG4gIH0sXG4gIHtcbiAgICBzcmM6ICcvaW1hZ2VzL3RyZWF0bWVudC1yb29tLmpwZycsXG4gICAgY2FwdGlvbjogJ1RyZWF0bWVudCBSb29tJyxcbiAgfSxcbiAge1xuICAgIHNyYzogJy9pbWFnZXMvY29uc3VsdGF0aW9uLmpwZycsXG4gICAgY2FwdGlvbjogJ0NvbnN1bHRhdGlvbiBSb29tJyxcbiAgfSxcbiAge1xuICAgIHNyYzogJy9pbWFnZXMvdHJlYXRtZW50LXJvb20uanBnJyxcbiAgICBjYXB0aW9uOiAnRGVudGFsIENoYWlyIFNldHVwJyxcbiAgfSxcbiAge1xuICAgIHNyYzogJy9pbWFnZXMvcmVjZXB0aW9uLmpwZycsXG4gICAgY2FwdGlvbjogJ1BhdGllbnQgU2VhdGluZyBBcmVhJyxcbiAgfSxcbiAge1xuICAgIHNyYzogJy9pbWFnZXMvY29uc3VsdGF0aW9uLmpwZycsXG4gICAgY2FwdGlvbjogXCJEb2N0b3IncyBPZmZpY2VcIixcbiAgfSxcbl07XG5cbmNvbnN0IHRlc3RpbW9uaWFscyA9IFtcbiAge1xuICAgIHF1b3RlOlxuICAgICAgJ0kgd2FzIHRlcnJpZmllZCBvZiByb290IGNhbmFscy4gRHIuIFJldmF0aGkgbWFkZSB0aGUgZW50aXJlIHByb2NlZHVyZSBjb21wbGV0ZWx5IHBhaW5sZXNzLiBJIHN0aWxsIGNhbm5vdCBiZWxpZXZlIGl0IHdhcyBkb25lIHNvIHF1aWNrbHkuJyxcbiAgICBuYW1lOiAnUHJpeWEgSy4gLSBDb2ltYmF0b3JlJyxcbiAgfSxcbiAge1xuICAgIHF1b3RlOlxuICAgICAgJ0RyLiBOYXZlZW5hIGRpZCBteSBqYXcgY29ycmVjdGlvbiBzdXJnZXJ5LiBUaGUgY2FyZSBiZWZvcmUgYW5kIGFmdGVyIHdhcyBleGNlcHRpb25hbC4gVGhlIHJlc3VsdHMgaGF2ZSB0cnVseSBjaGFuZ2VkIG15IGxpZmUgYW5kIGNvbmZpZGVuY2UuJyxcbiAgICBuYW1lOiAnQXJqdW4gTS4gLSBDaGVubmFpJyxcbiAgfSxcbiAge1xuICAgIHF1b3RlOlxuICAgICAgJ015IGNoaWxkcmVuIGFjdHVhbGx5IGxvb2sgZm9yd2FyZCB0byB2aXNpdGluZyBSS0RTLiBEci4gQXJ2aW5kIGlzIHdvbmRlcmZ1bCB3aXRoIGtpZHMgLSBldmVyeSB2aXNpdCBpcyBjb21wbGV0ZWx5IHN0cmVzcy1mcmVlLicsXG4gICAgbmFtZTogJ0thdml0aGEgUi4gLSBDb2ltYmF0b3JlJyxcbiAgfSxcbl07XG5cbmNvbnN0IHRyZWF0bWVudHNGb3JGb3JtID0gW1xuICAnRGVudGFsIEltcGxhbnRzJyxcbiAgJ1Jvb3QgQ2FuYWwgVHJlYXRtZW50JyxcbiAgJ0JyYWNlcyAvIENsZWFyIEFsaWduZXJzJyxcbiAgJ1NtaWxlIERlc2lnbmluZycsXG4gICdMYXNlciBHdW0gVHJlYXRtZW50JyxcbiAgXCJDaGlsZHJlbidzIERlbnRpc3RyeVwiLFxuICAnRmFjZSAmIEphdyBTdXJnZXJ5JyxcbiAgJ1dpc2RvbSBUb290aCcsXG4gICdUZWV0aCBXaGl0ZW5pbmcnLFxuICAnQ3Jvd25zLCBCcmlkZ2VzICYgRGVudHVyZXMnLFxuICAnT3RoZXIgLyBHZW5lcmFsIFF1ZXJ5Jyxcbl07XG5cbmZ1bmN0aW9uIFNlY3Rpb25IZWFkZXIoe1xuICBsYWJlbCxcbiAgdGl0bGUsXG4gIGFsaWduID0gJ2xlZnQnLFxuICBkYXJrID0gZmFsc2UsXG4gIGNoaWxkcmVuLFxufToge1xuICBsYWJlbDogc3RyaW5nO1xuICB0aXRsZTogc3RyaW5nO1xuICBhbGlnbj86ICdsZWZ0JyB8ICdjZW50ZXInO1xuICBkYXJrPzogYm9vbGVhbjtcbiAgY2hpbGRyZW4/OiBSZWFjdE5vZGU7XG59KSB7XG4gIHJldHVybiAoXG4gICAgPGRpdiBjbGFzc05hbWU9e2BzZWN0aW9uLWhlYWRlciAke2FsaWduID09PSAnY2VudGVyJyA/ICdjZW50ZXInIDogJyd9YH0+XG4gICAgICA8c3BhbiBjbGFzc05hbWU9e2BleWVicm93ICR7ZGFyayA/ICd3aGl0ZScgOiAnJ31gfT57bGFiZWx9PC9zcGFuPlxuICAgICAgPGgyIGNsYXNzTmFtZT17YHNlY3Rpb24tdGl0bGUgJHtkYXJrID8gJ3doaXRlJyA6ICcnfWB9Pnt0aXRsZX08L2gyPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJnb2xkLWxpbmVcIiAvPlxuICAgICAge2NoaWxkcmVufVxuICAgIDwvZGl2PlxuICApO1xufVxuXG5mdW5jdGlvbiBMb2dvKCkge1xuICByZXR1cm4gKFxuICAgIDxhXG4gICAgICBocmVmPVwiI2hlcm9cIlxuICAgICAgY2xhc3NOYW1lPVwiYnJhbmRcIlxuICAgICAgYXJpYS1sYWJlbD1cIlJhbWthbHlhbiBEZW50YWwgaG9tZVwiXG4gICAgICBvbkNsaWNrPXsoKSA9PiBjbG9zZURyYXdlcklmTmVlZGVkKCl9XG4gICAgPlxuICAgICAgPHNwYW4gY2xhc3NOYW1lPVwibG9nby1tYXJrXCI+Uks8L3NwYW4+XG4gICAgICA8c3BhbiBjbGFzc05hbWU9XCJicmFuZC1jb3B5XCI+XG4gICAgICAgIDxzdHJvbmc+UkFNS0FMWUFOIERFTlRBTDwvc3Ryb25nPlxuICAgICAgICA8c21hbGw+JiBGYWNlIFN1cmdpY2FsIENsaW5pYzwvc21hbGw+XG4gICAgICA8L3NwYW4+XG4gICAgPC9hPlxuICApO1xufVxuXG5mdW5jdGlvbiBjbG9zZURyYXdlcklmTmVlZGVkKCkge1xuICBkb2N1bWVudC5ib2R5LmNsYXNzTGlzdC5yZW1vdmUoJ2RyYXdlci1vcGVuJyk7XG59XG5cbmZ1bmN0aW9uIE5hdmJhcigpIHtcbiAgY29uc3QgW3Njcm9sbGVkLCBzZXRTY3JvbGxlZF0gPSB1c2VTdGF0ZShmYWxzZSk7XG4gIGNvbnN0IFtvcGVuLCBzZXRPcGVuXSA9IHVzZVN0YXRlKGZhbHNlKTtcbiAgY29uc3QgW2FjdGl2ZSwgc2V0QWN0aXZlXSA9IHVzZVN0YXRlKCcjaGVybycpO1xuXG4gIHVzZUVmZmVjdCgoKSA9PiB7XG4gICAgY29uc3Qgb25TY3JvbGwgPSAoKSA9PiBzZXRTY3JvbGxlZCh3aW5kb3cuc2Nyb2xsWSA+IDgwKTtcbiAgICB3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lcignc2Nyb2xsJywgb25TY3JvbGwsIHsgcGFzc2l2ZTogdHJ1ZSB9KTtcbiAgICBvblNjcm9sbCgpO1xuICAgIHJldHVybiAoKSA9PiB3aW5kb3cucmVtb3ZlRXZlbnRMaXN0ZW5lcignc2Nyb2xsJywgb25TY3JvbGwpO1xuICB9LCBbXSk7XG5cbiAgdXNlRWZmZWN0KCgpID0+IHtcbiAgICBkb2N1bWVudC5ib2R5LmNsYXNzTGlzdC50b2dnbGUoJ2RyYXdlci1vcGVuJywgb3Blbik7XG4gICAgcmV0dXJuICgpID0+IGRvY3VtZW50LmJvZHkuY2xhc3NMaXN0LnJlbW92ZSgnZHJhd2VyLW9wZW4nKTtcbiAgfSwgW29wZW5dKTtcblxuICB1c2VFZmZlY3QoKCkgPT4ge1xuICAgIGNvbnN0IHNlY3Rpb25zID0gWycjaGVybycsIC4uLm5hdkxpbmtzLm1hcCgobGluaykgPT4gbGluay5ocmVmKV1cbiAgICAgIC5tYXAoKGhyZWYpID0+IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoaHJlZikpXG4gICAgICAuZmlsdGVyKChzZWN0aW9uKTogc2VjdGlvbiBpcyBFbGVtZW50ID0+IHNlY3Rpb24gIT09IG51bGwpO1xuXG4gICAgY29uc3Qgb2JzZXJ2ZXIgPSBuZXcgSW50ZXJzZWN0aW9uT2JzZXJ2ZXIoXG4gICAgICAoZW50cmllcykgPT4ge1xuICAgICAgICBjb25zdCB2aXNpYmxlID0gZW50cmllc1xuICAgICAgICAgIC5maWx0ZXIoKGVudHJ5KSA9PiBlbnRyeS5pc0ludGVyc2VjdGluZylcbiAgICAgICAgICAuc29ydCgoYSwgYikgPT4gYi5pbnRlcnNlY3Rpb25SYXRpbyAtIGEuaW50ZXJzZWN0aW9uUmF0aW8pWzBdO1xuICAgICAgICBpZiAodmlzaWJsZT8udGFyZ2V0LmlkKSBzZXRBY3RpdmUoYCMke3Zpc2libGUudGFyZ2V0LmlkfWApO1xuICAgICAgfSxcbiAgICAgIHsgcm9vdE1hcmdpbjogJy0zMCUgMHB4IC01NSUgMHB4JywgdGhyZXNob2xkOiBbMC4wOCwgMC4yLCAwLjRdIH1cbiAgICApO1xuXG4gICAgc2VjdGlvbnMuZm9yRWFjaCgoc2VjdGlvbikgPT4gb2JzZXJ2ZXIub2JzZXJ2ZShzZWN0aW9uKSk7XG4gICAgcmV0dXJuICgpID0+IG9ic2VydmVyLmRpc2Nvbm5lY3QoKTtcbiAgfSwgW10pO1xuXG4gIGNvbnN0IGhhbmRsZU5hdiA9ICgpID0+IHNldE9wZW4oZmFsc2UpO1xuXG4gIHJldHVybiAoXG4gICAgPG5hdiBpZD1cIm5hdmJhclwiIGNsYXNzTmFtZT17c2Nyb2xsZWQgPyAnc2Nyb2xsZWQnIDogJyd9PlxuICAgICAgPExvZ28gLz5cblxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJuYXYtbGlua3NcIiBhcmlhLWxhYmVsPVwiUHJpbWFyeSBuYXZpZ2F0aW9uXCI+XG4gICAgICAgIHtuYXZMaW5rcy5tYXAoKGxpbmspID0+IChcbiAgICAgICAgICA8YVxuICAgICAgICAgICAga2V5PXtsaW5rLmhyZWZ9XG4gICAgICAgICAgICBocmVmPXtsaW5rLmhyZWZ9XG4gICAgICAgICAgICBjbGFzc05hbWU9e2FjdGl2ZSA9PT0gbGluay5ocmVmID8gJ2FjdGl2ZScgOiAnJ31cbiAgICAgICAgICA+XG4gICAgICAgICAgICB7bGluay5sYWJlbH1cbiAgICAgICAgICA8L2E+XG4gICAgICAgICkpfVxuICAgICAgPC9kaXY+XG5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwibmF2LWFjdGlvbnNcIj5cbiAgICAgICAgPGEgY2xhc3NOYW1lPVwicGhvbmUtZGlzcGxheVwiIGhyZWY9e3Bob25lSHJlZn0+XG4gICAgICAgICAgPFBob25lIHNpemU9ezE3fSBhcmlhLWhpZGRlbj1cInRydWVcIiAvPlxuICAgICAgICAgIDxzcGFuPntwaG9uZURpc3BsYXl9PC9zcGFuPlxuICAgICAgICA8L2E+XG4gICAgICAgIDxhIGNsYXNzTmFtZT1cImJ0bi1wcmltYXJ5IG5hdi1ib29rXCIgaHJlZj1cIiNjb250YWN0XCI+XG4gICAgICAgICAgQm9vayBBcHBvaW50bWVudFxuICAgICAgICA8L2E+XG4gICAgICAgIDxidXR0b25cbiAgICAgICAgICBpZD1cImhhbWJ1cmdlclwiXG4gICAgICAgICAgY2xhc3NOYW1lPVwiaGFtYnVyZ2VyXCJcbiAgICAgICAgICB0eXBlPVwiYnV0dG9uXCJcbiAgICAgICAgICBhcmlhLWxhYmVsPXtvcGVuID8gJ0Nsb3NlIG1lbnUnIDogJ09wZW4gbWVudSd9XG4gICAgICAgICAgYXJpYS1leHBhbmRlZD17b3Blbn1cbiAgICAgICAgICBvbkNsaWNrPXsoKSA9PiBzZXRPcGVuKCh2YWx1ZSkgPT4gIXZhbHVlKX1cbiAgICAgICAgPlxuICAgICAgICAgIHtvcGVuID8gPFggc2l6ZT17Mjh9IC8+IDogPE1lbnUgc2l6ZT17Mjh9IC8+fVxuICAgICAgICA8L2J1dHRvbj5cbiAgICAgIDwvZGl2PlxuXG4gICAgICA8YXNpZGUgY2xhc3NOYW1lPXtgbW9iaWxlLWRyYXdlciAke29wZW4gPyAnb3BlbicgOiAnJ31gfSBhcmlhLWhpZGRlbj17IW9wZW59PlxuICAgICAgICA8YnV0dG9uXG4gICAgICAgICAgY2xhc3NOYW1lPVwiZHJhd2VyLWNsb3NlXCJcbiAgICAgICAgICB0eXBlPVwiYnV0dG9uXCJcbiAgICAgICAgICBhcmlhLWxhYmVsPVwiQ2xvc2UgbWVudVwiXG4gICAgICAgICAgb25DbGljaz17KCkgPT4gc2V0T3BlbihmYWxzZSl9XG4gICAgICAgID5cbiAgICAgICAgICA8WCBzaXplPXsyOH0gLz5cbiAgICAgICAgPC9idXR0b24+XG4gICAgICAgIDxMb2dvIC8+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZHJhd2VyLWxpbmtzXCI+XG4gICAgICAgICAge25hdkxpbmtzLm1hcCgobGluaykgPT4gKFxuICAgICAgICAgICAgPGFcbiAgICAgICAgICAgICAga2V5PXtsaW5rLmhyZWZ9XG4gICAgICAgICAgICAgIGhyZWY9e2xpbmsuaHJlZn1cbiAgICAgICAgICAgICAgY2xhc3NOYW1lPXthY3RpdmUgPT09IGxpbmsuaHJlZiA/ICdhY3RpdmUnIDogJyd9XG4gICAgICAgICAgICAgIG9uQ2xpY2s9e2hhbmRsZU5hdn1cbiAgICAgICAgICAgID5cbiAgICAgICAgICAgICAge2xpbmsubGFiZWx9XG4gICAgICAgICAgICA8L2E+XG4gICAgICAgICAgKSl9XG4gICAgICAgIDwvZGl2PlxuICAgICAgICA8YSBjbGFzc05hbWU9XCJidG4tcHJpbWFyeSBkcmF3ZXItY3RhXCIgaHJlZj1cIiNjb250YWN0XCIgb25DbGljaz17aGFuZGxlTmF2fT5cbiAgICAgICAgICBCb29rIEFwcG9pbnRtZW50XG4gICAgICAgIDwvYT5cbiAgICAgIDwvYXNpZGU+XG4gICAgICA8YnV0dG9uXG4gICAgICAgIGNsYXNzTmFtZT17YGRyYXdlci1zY3JpbSAke29wZW4gPyAnb3BlbicgOiAnJ31gfVxuICAgICAgICB0eXBlPVwiYnV0dG9uXCJcbiAgICAgICAgYXJpYS1sYWJlbD1cIkNsb3NlIG1lbnUgb3ZlcmxheVwiXG4gICAgICAgIG9uQ2xpY2s9eygpID0+IHNldE9wZW4oZmFsc2UpfVxuICAgICAgLz5cbiAgICA8L25hdj5cbiAgKTtcbn1cblxuZnVuY3Rpb24gSGVyb1NlY3Rpb24oKSB7XG4gIHJldHVybiAoXG4gICAgPHNlY3Rpb24gaWQ9XCJoZXJvXCI+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cImhlcm8tY29udGVudFwiPlxuICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJleWVicm93IHdoaXRlXCI+UEFJTkxFU1MgwrcgTEFTRVItUE9XRVJFRCDCtyBTUEVDSUFMSVNUIENBUkU8L3NwYW4+XG4gICAgICAgIDxoMT5cbiAgICAgICAgICBZb3VyIFNtaWxlIERlc2VydmVzXG4gICAgICAgICAgPGJyIC8+XG4gICAgICAgICAgPGVtPmEgU3BlY2lhbGlzdC48L2VtPlxuICAgICAgICA8L2gxPlxuICAgICAgICA8cCBjbGFzc05hbWU9XCJoZXJvLXN1YlwiPlxuICAgICAgICAgIDQwIHllYXJzIG9mIHRydXN0ZWQgY2FyZS4gNyBzcGVjaWFsaXN0IGRvY3RvcnMuIE1vZGVybiBsYXNlci1hc3Npc3RlZFxuICAgICAgICAgIHRyZWF0bWVudHMgYXQgQ29pbWJhdG9yZSZhcG9zO3MgbW9zdCBhZHZhbmNlZCBkZW50YWwgYW5kIGZhY2Ugc3VyZ2ljYWwgY2xpbmljLlxuICAgICAgICA8L3A+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiaGVyby1jdGFzXCI+XG4gICAgICAgICAgPGEgaHJlZj1cIiNjb250YWN0XCIgY2xhc3NOYW1lPVwiYnRuLXByaW1hcnlcIj5cbiAgICAgICAgICAgIEJvb2sgQXBwb2ludG1lbnRcbiAgICAgICAgICA8L2E+XG4gICAgICAgICAgPGEgaHJlZj17cGhvbmVIcmVmfSBjbGFzc05hbWU9XCJidG4td2hpdGVcIj5cbiAgICAgICAgICAgIENhbGw6IHtwaG9uZURpc3BsYXl9XG4gICAgICAgICAgPC9hPlxuICAgICAgICA8L2Rpdj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJoZXJvLWJhZGdlc1wiPlxuICAgICAgICAgIHtbXG4gICAgICAgICAgICAnNDArIFlFQVJTJyxcbiAgICAgICAgICAgICc3IFNQRUNJQUxJU1RTJyxcbiAgICAgICAgICAgICdMQVNFUi1QT1dFUkVEJyxcbiAgICAgICAgICAgICdQQUlOTEVTUyBUUkVBVE1FTlQnLFxuICAgICAgICAgICAgJ1dPUkxEV0lERSBQQVRJRU5UUycsXG4gICAgICAgICAgXS5tYXAoKGJhZGdlKSA9PiAoXG4gICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJiYWRnZVwiIGtleT17YmFkZ2V9PlxuICAgICAgICAgICAgICB7YmFkZ2V9XG4gICAgICAgICAgICA8L3NwYW4+XG4gICAgICAgICAgKSl9XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9kaXY+XG4gICAgPC9zZWN0aW9uPlxuICApO1xufVxuXG5mdW5jdGlvbiBJbmZvQmFyKCkge1xuICByZXR1cm4gKFxuICAgIDxkaXYgaWQ9XCJpbmZvYmFyXCI+XG4gICAgICA8c3Bhbj5cbiAgICAgICAgPE1hcFBpbiBzaXplPXsxOH0gYXJpYS1oaWRkZW49XCJ0cnVlXCIgLz5cbiAgICAgICAgS3VydW1iYXBhbGF5YW0sIENvaW1iYXRvcmVcbiAgICAgIDwvc3Bhbj5cbiAgICAgIDxhIGhyZWY9e3Bob25lSHJlZn0+XG4gICAgICAgIDxQaG9uZSBzaXplPXsxOH0gYXJpYS1oaWRkZW49XCJ0cnVlXCIgLz5cbiAgICAgICAge3Bob25lRGlzcGxheX1cbiAgICAgIDwvYT5cbiAgICAgIDxzcGFuPlxuICAgICAgICA8Q2xvY2sgc2l6ZT17MTh9IGFyaWEtaGlkZGVuPVwidHJ1ZVwiIC8+XG4gICAgICAgIDEwQU0tMVBNIMK3IDVQTS04UE0gRGFpbHlcbiAgICAgIDwvc3Bhbj5cbiAgICAgIDxhIGhyZWY9e2VtYWlsSHJlZn0+XG4gICAgICAgIDxNYWlsIHNpemU9ezE4fSBhcmlhLWhpZGRlbj1cInRydWVcIiAvPlxuICAgICAgICB7ZW1haWx9XG4gICAgICA8L2E+XG4gICAgPC9kaXY+XG4gICk7XG59XG5cbmZ1bmN0aW9uIFdoeVNlY3Rpb24oKSB7XG4gIHJldHVybiAoXG4gICAgPHNlY3Rpb24gaWQ9XCJ3aHlcIiBjbGFzc05hbWU9XCJzZWN0aW9uIHN0b25lXCI+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRhaW5lclwiPlxuICAgICAgICA8U2VjdGlvbkhlYWRlclxuICAgICAgICAgIGxhYmVsPVwiV0hZIENIT09TRSBVU1wiXG4gICAgICAgICAgdGl0bGU9XCJNb3JlIFRoYW4gYSBEZW50aXN0LiBBIENvbXBsZXRlIENhcmUgVGVhbS5cIlxuICAgICAgICAgIGFsaWduPVwiY2VudGVyXCJcbiAgICAgICAgLz5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJ3aHktZ3JpZFwiPlxuICAgICAgICAgIHt3aHlDYXJkcy5tYXAoKGl0ZW0pID0+IHtcbiAgICAgICAgICAgIGNvbnN0IEljb24gPSBpdGVtLmljb247XG4gICAgICAgICAgICByZXR1cm4gKFxuICAgICAgICAgICAgICA8YXJ0aWNsZVxuICAgICAgICAgICAgICAgIGNsYXNzTmFtZT17YGNhcmQgd2h5LWNhcmQgJHtpdGVtLmZlYXR1cmVkID8gJ2ZlYXR1cmVkJyA6ICcnfWB9XG4gICAgICAgICAgICAgICAga2V5PXtpdGVtLnRpdGxlfVxuICAgICAgICAgICAgICA+XG4gICAgICAgICAgICAgICAgPEljb24gY2xhc3NOYW1lPVwiY2FyZC1pY29uXCIgYXJpYS1oaWRkZW49XCJ0cnVlXCIgLz5cbiAgICAgICAgICAgICAgICB7aXRlbS5zdGF0ICYmIDxzcGFuIGNsYXNzTmFtZT1cIndoeS1zdGF0XCI+e2l0ZW0uc3RhdH08L3NwYW4+fVxuICAgICAgICAgICAgICAgIDxoMz57aXRlbS50aXRsZX08L2gzPlxuICAgICAgICAgICAgICAgIDxwPntpdGVtLmJvZHl9PC9wPlxuICAgICAgICAgICAgICA8L2FydGljbGU+XG4gICAgICAgICAgICApO1xuICAgICAgICAgIH0pfVxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuICAgIDwvc2VjdGlvbj5cbiAgKTtcbn1cblxuZnVuY3Rpb24gVHJlYXRtZW50c1NlY3Rpb24oKSB7XG4gIHJldHVybiAoXG4gICAgPHNlY3Rpb24gaWQ9XCJ0cmVhdG1lbnRzXCIgY2xhc3NOYW1lPVwic2VjdGlvbiB3aGl0ZS1zZWN0aW9uXCI+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRhaW5lclwiPlxuICAgICAgICA8U2VjdGlvbkhlYWRlciBsYWJlbD1cIk9VUiBUUkVBVE1FTlRTXCIgdGl0bGU9XCJFeHBlcnQgQ2FyZSBmb3IgRXZlcnkgRGVudGFsIE5lZWQuXCI+XG4gICAgICAgICAgPHAgY2xhc3NOYW1lPVwic2VjdGlvbi1jb3B5XCI+XG4gICAgICAgICAgICBGcm9tIHBhaW5sZXNzIHJvb3QgY2FuYWxzIHRvIGZ1bGwgc21pbGUgbWFrZW92ZXJzIC0gb3VyIDctZG9jdG9yIHNwZWNpYWxpc3RcbiAgICAgICAgICAgIHRlYW0gaGFzIHRoZSBleHBlcnRpc2UgYW5kIHRlY2hub2xvZ3kgdG8gaGVscCB5b3UuXG4gICAgICAgICAgPC9wPlxuICAgICAgICA8L1NlY3Rpb25IZWFkZXI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwic2VydmljZS1ncmlkXCI+XG4gICAgICAgICAge3NlcnZpY2VzLm1hcCgoc2VydmljZSkgPT4ge1xuICAgICAgICAgICAgY29uc3QgSWNvbiA9IHNlcnZpY2UuaWNvbjtcbiAgICAgICAgICAgIHJldHVybiAoXG4gICAgICAgICAgICAgIDxhcnRpY2xlIGNsYXNzTmFtZT1cImNhcmQgc2VydmljZS1jYXJkXCIga2V5PXtzZXJ2aWNlLnRpdGxlfT5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInNlcnZpY2UtaWNvblwiPlxuICAgICAgICAgICAgICAgICAgPEljb24gYXJpYS1oaWRkZW49XCJ0cnVlXCIgLz5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8aDMgY2xhc3NOYW1lPVwic2VydmljZS10aXRsZVwiPntzZXJ2aWNlLnRpdGxlfTwvaDM+XG4gICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwic2VydmljZS1kZXNjXCI+e3NlcnZpY2UuYm9keX08L3A+XG4gICAgICAgICAgICAgICAgPGEgaHJlZj1cIiNjb250YWN0XCIgY2xhc3NOYW1lPVwic2VydmljZS1saW5rXCI+XG4gICAgICAgICAgICAgICAgICBCb29rIFRoaXMgVHJlYXRtZW50IOKGklxuICAgICAgICAgICAgICAgIDwvYT5cbiAgICAgICAgICAgICAgPC9hcnRpY2xlPlxuICAgICAgICAgICAgKTtcbiAgICAgICAgICB9KX1cbiAgICAgICAgPC9kaXY+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY2VudGVyIG10LTQwXCI+XG4gICAgICAgICAgPGEgaHJlZj1cIiNjb250YWN0XCIgY2xhc3NOYW1lPVwiYnRuLXByaW1hcnlcIj5cbiAgICAgICAgICAgIEJvb2sgYSBDb25zdWx0YXRpb25cbiAgICAgICAgICA8L2E+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9kaXY+XG4gICAgPC9zZWN0aW9uPlxuICApO1xufVxuXG5mdW5jdGlvbiBQcm9jZXNzU2VjdGlvbigpIHtcbiAgcmV0dXJuIChcbiAgICA8c2VjdGlvbiBpZD1cInByb2Nlc3NcIiBjbGFzc05hbWU9XCJzZWN0aW9uIGRhcmstc2VjdGlvblwiPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWluZXJcIj5cbiAgICAgICAgPFNlY3Rpb25IZWFkZXJcbiAgICAgICAgICBsYWJlbD1cIlRIRSBQUk9DRVNTXCJcbiAgICAgICAgICB0aXRsZT1cIkdldHRpbmcgQ2FyZSBhdCBSS0RTIGlzIFNpbXBsZS5cIlxuICAgICAgICAgIGFsaWduPVwiY2VudGVyXCJcbiAgICAgICAgICBkYXJrXG4gICAgICAgIC8+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicHJvY2Vzcy1ncmlkXCI+XG4gICAgICAgICAge3Byb2Nlc3NTdGVwcy5tYXAoKHN0ZXApID0+IChcbiAgICAgICAgICAgIDxhcnRpY2xlIGNsYXNzTmFtZT1cInByb2Nlc3Mtc3RlcFwiIGtleT17c3RlcC5udW19PlxuICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInN0ZXAtbnVtYmVyXCI+e3N0ZXAubnVtfTwvZGl2PlxuICAgICAgICAgICAgICA8aDMgY2xhc3NOYW1lPVwic3RlcC10aXRsZVwiPntzdGVwLnRpdGxlfTwvaDM+XG4gICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInN0ZXAtYm9keVwiPntzdGVwLmJvZHl9PC9wPlxuICAgICAgICAgICAgPC9hcnRpY2xlPlxuICAgICAgICAgICkpfVxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuICAgIDwvc2VjdGlvbj5cbiAgKTtcbn1cblxuZnVuY3Rpb24gRG9jdG9yc1NlY3Rpb24oKSB7XG4gIHJldHVybiAoXG4gICAgPHNlY3Rpb24gaWQ9XCJkb2N0b3JzXCIgY2xhc3NOYW1lPVwic2VjdGlvbiBzdG9uZVwiPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWluZXJcIj5cbiAgICAgICAgPFNlY3Rpb25IZWFkZXIgbGFiZWw9XCJPVVIgU1BFQ0lBTElTVFNcIiB0aXRsZT1cIjcgU3BlY2lhbGlzdHMuIE9uZSBDbGluaWMuIENvbXBsZXRlIENhcmUuXCI+XG4gICAgICAgICAgPHAgY2xhc3NOYW1lPVwic2VjdGlvbi1jb3B5XCI+XG4gICAgICAgICAgICBFdmVyeSBkb2N0b3IgYXQgUktEUyBob2xkcyBhIHBvc3RncmFkdWF0ZSBNRFMgb3IgZXF1aXZhbGVudCBzcGVjaWFsaXN0XG4gICAgICAgICAgICBxdWFsaWZpY2F0aW9uLiBZb3UgYXJlIG5ldmVyIHRyZWF0ZWQgYnkgYSBnZW5lcmFsIGRlbnRpc3QgZm9yIGEgc3BlY2lhbGlzdFxuICAgICAgICAgICAgcHJvYmxlbS5cbiAgICAgICAgICA8L3A+XG4gICAgICAgIDwvU2VjdGlvbkhlYWRlcj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJkb2N0b3ItZ3JpZFwiPlxuICAgICAgICAgIHtkb2N0b3JzLm1hcCgoZG9jdG9yKSA9PiAoXG4gICAgICAgICAgICA8YXJ0aWNsZSBjbGFzc05hbWU9XCJjYXJkIGRvY3Rvci1jYXJkXCIga2V5PXtkb2N0b3IubmFtZX0+XG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZG9jdG9yLWF2YXRhclwiPlxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYXZhdGFyLWNpcmNsZVwiPntkb2N0b3IuaW5pdGlhbHN9PC9kaXY+XG4gICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImRvY3Rvci10YWdcIj57ZG9jdG9yLnRhZ308L2Rpdj5cbiAgICAgICAgICAgICAgPGgzIGNsYXNzTmFtZT1cImRvY3Rvci1uYW1lXCI+e2RvY3Rvci5uYW1lfTwvaDM+XG4gICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cImRvY3Rvci1xdWFsc1wiPntkb2N0b3IucXVhbHN9PC9wPlxuICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJkb2N0b3ItYmlvXCI+e2RvY3Rvci5iaW99PC9wPlxuICAgICAgICAgICAgICA8YSBocmVmPVwiI2NvbnRhY3RcIiBjbGFzc05hbWU9XCJidG4tc2Vjb25kYXJ5IGZ1bGwtd2lkdGhcIj5cbiAgICAgICAgICAgICAgICBCb29rIEFwcG9pbnRtZW50XG4gICAgICAgICAgICAgIDwvYT5cbiAgICAgICAgICAgIDwvYXJ0aWNsZT5cbiAgICAgICAgICApKX1cbiAgICAgICAgPC9kaXY+XG4gICAgICAgIDxhIGhyZWY9XCIjY29udGFjdFwiIGNsYXNzTmFtZT1cInRleHQtbGluayB0ZWFtLWxpbmtcIj5cbiAgICAgICAgICBNZWV0IE91ciBGdWxsIFRlYW0g4oaSXG4gICAgICAgIDwvYT5cbiAgICAgIDwvZGl2PlxuICAgIDwvc2VjdGlvbj5cbiAgKTtcbn1cblxuZnVuY3Rpb24gRXF1aXBtZW50U2VjdGlvbigpIHtcbiAgcmV0dXJuIChcbiAgICA8c2VjdGlvbiBpZD1cImVxdWlwbWVudFwiIGNsYXNzTmFtZT1cInNlY3Rpb24gd2hpdGUtc2VjdGlvblwiPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWluZXJcIj5cbiAgICAgICAgPFNlY3Rpb25IZWFkZXIgbGFiZWw9XCJPVVIgVEVDSE5PTE9HWVwiIHRpdGxlPVwiQ2xpbmljLUdyYWRlIEVxdWlwbWVudCBZb3UgQ2FuIFRydXN0LlwiPlxuICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInNlY3Rpb24tY29weVwiPlxuICAgICAgICAgICAgV2UgaW52ZXN0IGluIHRoZSBzYW1lIHRlY2hub2xvZ3kgdXNlZCBieSBzcGVjaWFsaXN0IGhvc3BpdGFscyAtIHNvIHlvdXJcbiAgICAgICAgICAgIHRyZWF0bWVudCBpcyBwcmVjaXNlLCBjb21mb3J0YWJsZSwgYW5kIGRlbGl2ZXJlZCB0byB0aGUgaGlnaGVzdCBzdGFuZGFyZC5cbiAgICAgICAgICA8L3A+XG4gICAgICAgIDwvU2VjdGlvbkhlYWRlcj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJlcXVpcG1lbnQtZ3JpZFwiPlxuICAgICAgICAgIHtlcXVpcG1lbnQubWFwKChpdGVtKSA9PiAoXG4gICAgICAgICAgICA8YXJ0aWNsZSBjbGFzc05hbWU9XCJjYXJkIGVxdWlwbWVudC1jYXJkXCIga2V5PXtpdGVtLm5hbWV9PlxuICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImVxdWlwLWltYWdlLXdyYXBcIj5cbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT17YGVxdWlwLXZpc3VhbCAke2l0ZW0uY2xhc3NOYW1lfWB9IC8+XG4gICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImVxdWlwLWJhZGdlXCI+e2l0ZW0uYmFkZ2V9PC9kaXY+XG4gICAgICAgICAgICAgIDxoMyBjbGFzc05hbWU9XCJlcXVpcC1uYW1lXCI+e2l0ZW0ubmFtZX08L2gzPlxuICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJlcXVpcC1kZXNjXCI+e2l0ZW0uYm9keX08L3A+XG4gICAgICAgICAgICA8L2FydGljbGU+XG4gICAgICAgICAgKSl9XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9kaXY+XG4gICAgPC9zZWN0aW9uPlxuICApO1xufVxuXG5mdW5jdGlvbiBHYWxsZXJ5U2VjdGlvbigpIHtcbiAgcmV0dXJuIChcbiAgICA8c2VjdGlvbiBpZD1cImdhbGxlcnlcIiBjbGFzc05hbWU9XCJzZWN0aW9uIGRhcmstc2VjdGlvblwiPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWluZXJcIj5cbiAgICAgICAgPFNlY3Rpb25IZWFkZXJcbiAgICAgICAgICBsYWJlbD1cIklOU0lERSBSS0RTXCJcbiAgICAgICAgICB0aXRsZT1cIkEgU3BhY2UgRGVzaWduZWQgZm9yIFlvdXIgQ29tZm9ydC5cIlxuICAgICAgICAgIGFsaWduPVwiY2VudGVyXCJcbiAgICAgICAgICBkYXJrXG4gICAgICAgID5cbiAgICAgICAgICA8cCBjbGFzc05hbWU9XCJzZWN0aW9uLWNvcHkgbGlnaHQgY2VudGVyLWNvcHlcIj5cbiAgICAgICAgICAgIE91ciBuZXcgQ29pbWJhdG9yZSBjbGluaWMgLSBleHBhbmRlZCB0cmVhdG1lbnQgcm9vbXMsIG1vZGVybiBzZWF0aW5nLCBhbmRcbiAgICAgICAgICAgIGFkdmFuY2VkIGVxdWlwbWVudCB1bmRlciBvbmUgcm9vZi5cbiAgICAgICAgICA8L3A+XG4gICAgICAgIDwvU2VjdGlvbkhlYWRlcj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJnYWxsZXJ5LWdyaWRcIj5cbiAgICAgICAgICB7Z2FsbGVyeS5tYXAoKGl0ZW0sIGluZGV4KSA9PiAoXG4gICAgICAgICAgICA8ZmlndXJlIGNsYXNzTmFtZT1cImdhbGxlcnktaXRlbVwiIGtleT17YCR7aXRlbS5jYXB0aW9ufS0ke2luZGV4fWB9PlxuICAgICAgICAgICAgICA8aW1nIHNyYz17aXRlbS5zcmN9IGFsdD17aXRlbS5jYXB0aW9ufSBsb2FkaW5nPVwibGF6eVwiIC8+XG4gICAgICAgICAgICAgIDxmaWdjYXB0aW9uIGNsYXNzTmFtZT1cImdhbGxlcnktY2FwdGlvblwiPntpdGVtLmNhcHRpb259PC9maWdjYXB0aW9uPlxuICAgICAgICAgICAgPC9maWd1cmU+XG4gICAgICAgICAgKSl9XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9kaXY+XG4gICAgPC9zZWN0aW9uPlxuICApO1xufVxuXG5mdW5jdGlvbiBUZXN0aW1vbmlhbHNTZWN0aW9uKCkge1xuICBjb25zdCBbYWN0aXZlLCBzZXRBY3RpdmVdID0gdXNlU3RhdGUoMCk7XG5cbiAgdXNlRWZmZWN0KCgpID0+IHtcbiAgICBjb25zdCB0aW1lciA9IHdpbmRvdy5zZXRJbnRlcnZhbCgoKSA9PiB7XG4gICAgICBzZXRBY3RpdmUoKHZhbHVlKSA9PiAodmFsdWUgKyAxKSAlIHRlc3RpbW9uaWFscy5sZW5ndGgpO1xuICAgIH0sIDUwMDApO1xuICAgIHJldHVybiAoKSA9PiB3aW5kb3cuY2xlYXJJbnRlcnZhbCh0aW1lcik7XG4gIH0sIFtdKTtcblxuICBjb25zdCB2aXNpYmxlVGVzdGltb25pYWxzID0gdXNlTWVtbyhcbiAgICAoKSA9PiB0ZXN0aW1vbmlhbHMubWFwKChfLCBpbmRleCkgPT4gdGVzdGltb25pYWxzWyhhY3RpdmUgKyBpbmRleCkgJSB0ZXN0aW1vbmlhbHMubGVuZ3RoXSksXG4gICAgW2FjdGl2ZV1cbiAgKTtcblxuICBjb25zdCBtb3ZlID0gKGRpcmVjdGlvbjogbnVtYmVyKSA9PiB7XG4gICAgc2V0QWN0aXZlKCh2YWx1ZSkgPT4gKHZhbHVlICsgZGlyZWN0aW9uICsgdGVzdGltb25pYWxzLmxlbmd0aCkgJSB0ZXN0aW1vbmlhbHMubGVuZ3RoKTtcbiAgfTtcblxuICByZXR1cm4gKFxuICAgIDxzZWN0aW9uIGlkPVwidGVzdGltb25pYWxzXCIgY2xhc3NOYW1lPVwic2VjdGlvbiBzdG9uZVwiPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWluZXJcIj5cbiAgICAgICAgPFNlY3Rpb25IZWFkZXJcbiAgICAgICAgICBsYWJlbD1cIldIQVQgUEFUSUVOVFMgU0FZXCJcbiAgICAgICAgICB0aXRsZT1cIlRydXN0ZWQgYnkgRmFtaWxpZXMgQWNyb3NzIEdlbmVyYXRpb25zLlwiXG4gICAgICAgICAgYWxpZ249XCJjZW50ZXJcIlxuICAgICAgICAvPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInRlc3RpbW9uaWFsLXNoZWxsXCI+XG4gICAgICAgICAgPGJ1dHRvblxuICAgICAgICAgICAgY2xhc3NOYW1lPVwidGVzdGltb25pYWwtYXJyb3dcIlxuICAgICAgICAgICAgdHlwZT1cImJ1dHRvblwiXG4gICAgICAgICAgICBhcmlhLWxhYmVsPVwiUHJldmlvdXMgdGVzdGltb25pYWxcIlxuICAgICAgICAgICAgb25DbGljaz17KCkgPT4gbW92ZSgtMSl9XG4gICAgICAgICAgPlxuICAgICAgICAgICAgPENoZXZyb25MZWZ0IGFyaWEtaGlkZGVuPVwidHJ1ZVwiIC8+XG4gICAgICAgICAgPC9idXR0b24+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJ0ZXN0aW1vbmlhbC1ncmlkXCI+XG4gICAgICAgICAgICB7dmlzaWJsZVRlc3RpbW9uaWFscy5tYXAoKHRlc3RpbW9uaWFsKSA9PiAoXG4gICAgICAgICAgICAgIDxhcnRpY2xlIGNsYXNzTmFtZT1cInRlc3RpbW9uaWFsLWNhcmQgY2FyZFwiIGtleT17dGVzdGltb25pYWwubmFtZX0+XG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJzdGFyc1wiIGFyaWEtbGFiZWw9XCI1IHN0YXIgcmV2aWV3XCI+XG4gICAgICAgICAgICAgICAgICDimIXimIXimIXimIXimIVcbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICA8YmxvY2txdW90ZSBjbGFzc05hbWU9XCJxdW90ZVwiPlwie3Rlc3RpbW9uaWFsLnF1b3RlfVwiPC9ibG9ja3F1b3RlPlxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicGF0aWVudC1uYW1lXCI+e3Rlc3RpbW9uaWFsLm5hbWV9PC9kaXY+XG4gICAgICAgICAgICAgIDwvYXJ0aWNsZT5cbiAgICAgICAgICAgICkpfVxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDxidXR0b25cbiAgICAgICAgICAgIGNsYXNzTmFtZT1cInRlc3RpbW9uaWFsLWFycm93XCJcbiAgICAgICAgICAgIHR5cGU9XCJidXR0b25cIlxuICAgICAgICAgICAgYXJpYS1sYWJlbD1cIk5leHQgdGVzdGltb25pYWxcIlxuICAgICAgICAgICAgb25DbGljaz17KCkgPT4gbW92ZSgxKX1cbiAgICAgICAgICA+XG4gICAgICAgICAgICA8Q2hldnJvblJpZ2h0IGFyaWEtaGlkZGVuPVwidHJ1ZVwiIC8+XG4gICAgICAgICAgPC9idXR0b24+XG4gICAgICAgIDwvZGl2PlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInRlc3RpbW9uaWFsLWRvdHNcIiBhcmlhLWxhYmVsPVwiQ2hvb3NlIHRlc3RpbW9uaWFsXCI+XG4gICAgICAgICAge3Rlc3RpbW9uaWFscy5tYXAoKHRlc3RpbW9uaWFsLCBpbmRleCkgPT4gKFxuICAgICAgICAgICAgPGJ1dHRvblxuICAgICAgICAgICAgICB0eXBlPVwiYnV0dG9uXCJcbiAgICAgICAgICAgICAga2V5PXt0ZXN0aW1vbmlhbC5uYW1lfVxuICAgICAgICAgICAgICBjbGFzc05hbWU9e2luZGV4ID09PSBhY3RpdmUgPyAnYWN0aXZlJyA6ICcnfVxuICAgICAgICAgICAgICBhcmlhLWxhYmVsPXtgU2hvdyB0ZXN0aW1vbmlhbCAke2luZGV4ICsgMX1gfVxuICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiBzZXRBY3RpdmUoaW5kZXgpfVxuICAgICAgICAgICAgLz5cbiAgICAgICAgICApKX1cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5cbiAgICA8L3NlY3Rpb24+XG4gICk7XG59XG5cbmZ1bmN0aW9uIEFib3V0U2VjdGlvbigpIHtcbiAgcmV0dXJuIChcbiAgICA8c2VjdGlvbiBpZD1cImFib3V0XCIgY2xhc3NOYW1lPVwic2VjdGlvbiB3aGl0ZS1zZWN0aW9uXCI+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRhaW5lciBhYm91dC1ncmlkXCI+XG4gICAgICAgIDxkaXY+XG4gICAgICAgICAgPFNlY3Rpb25IZWFkZXIgbGFiZWw9XCJPVVIgU1RPUllcIiB0aXRsZT1cIkJ1aWxkaW5nIFRydXN0IFNpbmNlIDE5ODQuXCIgLz5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImFib3V0LWNvcHlcIj5cbiAgICAgICAgICAgIDxwPlxuICAgICAgICAgICAgICBSYW0gS2FseWFuIENsaW5pYyB3YXMgZm91bmRlZCBpbiBPb3R5IGluIDE5ODQgYnkgTGlvbi4gRHIuIFYgUiBOYXRoIC1cbiAgICAgICAgICAgICAgYnVpbHQgb24gdGhlIHByaW5jaXBsZXMgb2YgcHJvZmVzc2lvbmFsIGNhcmUgYW5kIGFmZm9yZGFibGUgaGVhbHRoY2FyZSBmb3JcbiAgICAgICAgICAgICAgYWxsIGNvbW11bml0aWVzLlxuICAgICAgICAgICAgPC9wPlxuICAgICAgICAgICAgPHA+XG4gICAgICAgICAgICAgIFRoZSBDb2ltYmF0b3JlIGJyYW5jaCBvcGVuZWQgaW4gMjAxMywgYnJpbmdpbmcgdGhlIHNhbWUgY29tbWl0bWVudCB0b1xuICAgICAgICAgICAgICBleGNlbGxlbmNlIHRvIGEgZ3Jvd2luZyBjb21tdW5pdHkuIEluIEp1bmUgMjAyNiwgd2UgbW92ZWQgaW50byBhIHNwYWNpb3VzLFxuICAgICAgICAgICAgICBmdWxseSBtb2Rlcm5pc2VkIGNsaW5pYyBpbiBLdXJ1bWJhcGFsYXlhbSB3aXRoIGV4cGFuZGVkIGNhcGFjaXR5LCBhIHRlYW0gb2ZcbiAgICAgICAgICAgICAgNyBzcGVjaWFsaXN0IGRvY3RvcnMsIGFuZCB0aGUgbW9zdCBhZHZhbmNlZCBkZW50YWwgZXF1aXBtZW50IGluIHRoZSByZWdpb24uXG4gICAgICAgICAgICA8L3A+XG4gICAgICAgICAgICA8cD5cbiAgICAgICAgICAgICAgVG9kYXksIHdlIHNlcnZlIHBhdGllbnRzIGZyb20gYWNyb3NzIEluZGlhIGFuZCB0aGUgd29ybGQgLSBhIHRlc3RhbWVudCB0b1xuICAgICAgICAgICAgICBvdXIgdW53YXZlcmluZyBkZWRpY2F0aW9uIHRvIHF1YWxpdHkgY2FyZS5cbiAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICA8YSBocmVmPVwiI2NvbnRhY3RcIiBjbGFzc05hbWU9XCJidG4tcHJpbWFyeVwiPlxuICAgICAgICAgICAgQm9vayBZb3VyIEFwcG9pbnRtZW50IOKGklxuICAgICAgICAgIDwvYT5cbiAgICAgICAgPC9kaXY+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWJvdXQtaW1hZ2Utd3JhcFwiPlxuICAgICAgICAgIDxpbWcgc3JjPVwiL2ltYWdlcy90cmVhdG1lbnQtcm9vbS5qcGdcIiBhbHQ9XCJSS0RTIHRyZWF0bWVudCByb29tXCIgbG9hZGluZz1cImxhenlcIiAvPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwic3RhdC1jYXJkXCI+XG4gICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJzdGF0LW51bVwiPjQwKzwvc3Bhbj5cbiAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cInN0YXQtbGFiZWxcIj5ZZWFycyBvZiBFeGNlbGxlbmNlPC9zcGFuPlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuICAgIDwvc2VjdGlvbj5cbiAgKTtcbn1cblxuZnVuY3Rpb24gQ3RhQmFubmVyKCkge1xuICByZXR1cm4gKFxuICAgIDxzZWN0aW9uIGlkPVwiY3RhLWJhbm5lclwiPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWluZXIgY2VudGVyXCI+XG4gICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cImV5ZWJyb3cgd2hpdGVcIj5HRVQgU1RBUlRFRCBUT0RBWTwvc3Bhbj5cbiAgICAgICAgPGgyIGNsYXNzTmFtZT1cInNlY3Rpb24tdGl0bGUgd2hpdGUgY3RhLXRpdGxlXCI+UmVhZHkgdG8gVHJhbnNmb3JtIFlvdXIgU21pbGU/PC9oMj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJnb2xkLWxpbmVcIiAvPlxuICAgICAgICA8cD5cbiAgICAgICAgICBPdXIgc3BlY2lhbGlzdHMgYXJlIGF2YWlsYWJsZSBldmVyeSBkYXkuIENhbGwsIFdoYXRzQXBwLCBvciBib29rIG9ubGluZSAtIHdlXG4gICAgICAgICAgZ3VpZGUgeW91IGZyb20gZmlyc3QgY29uc3VsdGF0aW9uIHRvIGZpbmFsIHRyZWF0bWVudC5cbiAgICAgICAgPC9wPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImN0YS1hY3Rpb25zXCI+XG4gICAgICAgICAgPGEgaHJlZj1cIiNjb250YWN0XCIgY2xhc3NOYW1lPVwiYnRuLXByaW1hcnlcIj5cbiAgICAgICAgICAgIEJvb2sgQXBwb2ludG1lbnQgT25saW5lXG4gICAgICAgICAgPC9hPlxuICAgICAgICAgIDxhIGhyZWY9e3Bob25lSHJlZn0gY2xhc3NOYW1lPVwiYnRuLXdoaXRlXCI+XG4gICAgICAgICAgICBDYWxsIHtwaG9uZURpc3BsYXl9XG4gICAgICAgICAgPC9hPlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuICAgIDwvc2VjdGlvbj5cbiAgKTtcbn1cblxuZnVuY3Rpb24gQ29udGFjdFNlY3Rpb24oKSB7XG4gIGNvbnN0IFtzdWJtaXR0ZWQsIHNldFN1Ym1pdHRlZF0gPSB1c2VTdGF0ZShmYWxzZSk7XG5cbiAgY29uc3QgaGFuZGxlU3VibWl0ID0gKGV2ZW50OiBGb3JtRXZlbnQ8SFRNTEZvcm1FbGVtZW50PikgPT4ge1xuICAgIGV2ZW50LnByZXZlbnREZWZhdWx0KCk7XG4gICAgc2V0U3VibWl0dGVkKHRydWUpO1xuICAgIGV2ZW50LmN1cnJlbnRUYXJnZXQucmVzZXQoKTtcbiAgICB3aW5kb3cuc2V0VGltZW91dCgoKSA9PiBzZXRTdWJtaXR0ZWQoZmFsc2UpLCA1MDAwKTtcbiAgfTtcblxuICByZXR1cm4gKFxuICAgIDxzZWN0aW9uIGlkPVwiY29udGFjdFwiIGNsYXNzTmFtZT1cInNlY3Rpb24gc3RvbmVcIj5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY29udGFpbmVyXCI+XG4gICAgICAgIDxTZWN0aW9uSGVhZGVyIGxhYmVsPVwiUkVBQ0ggVVNcIiB0aXRsZT1cIkJvb2sgWW91ciBBcHBvaW50bWVudFwiIGFsaWduPVwiY2VudGVyXCIgLz5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWN0LWdyaWRcIj5cbiAgICAgICAgICA8Zm9ybSBjbGFzc05hbWU9XCJhcHBvaW50bWVudC1mb3JtIGNhcmRcIiBvblN1Ym1pdD17aGFuZGxlU3VibWl0fT5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZm9ybS1yb3dcIj5cbiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmb3JtLWdyb3VwXCI+XG4gICAgICAgICAgICAgICAgPGxhYmVsIGh0bWxGb3I9XCJmdWxsLW5hbWVcIj5GdWxsIE5hbWUgKjwvbGFiZWw+XG4gICAgICAgICAgICAgICAgPGlucHV0IGlkPVwiZnVsbC1uYW1lXCIgdHlwZT1cInRleHRcIiBwbGFjZWhvbGRlcj1cIllvdXIgZnVsbCBuYW1lXCIgcmVxdWlyZWQgLz5cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZm9ybS1ncm91cFwiPlxuICAgICAgICAgICAgICAgIDxsYWJlbCBodG1sRm9yPVwicGhvbmUtbnVtYmVyXCI+UGhvbmUgTnVtYmVyICo8L2xhYmVsPlxuICAgICAgICAgICAgICAgIDxpbnB1dCBpZD1cInBob25lLW51bWJlclwiIHR5cGU9XCJ0ZWxcIiBwbGFjZWhvbGRlcj1cIis5MS4uLlwiIHJlcXVpcmVkIC8+XG4gICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZvcm0tZ3JvdXBcIj5cbiAgICAgICAgICAgICAgPGxhYmVsIGh0bWxGb3I9XCJlbWFpbC1hZGRyZXNzXCI+RW1haWwgQWRkcmVzczwvbGFiZWw+XG4gICAgICAgICAgICAgIDxpbnB1dCBpZD1cImVtYWlsLWFkZHJlc3NcIiB0eXBlPVwiZW1haWxcIiBwbGFjZWhvbGRlcj1cInlvdUBlbWFpbC5jb21cIiAvPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZvcm0tcm93XCI+XG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZm9ybS1ncm91cFwiPlxuICAgICAgICAgICAgICAgIDxsYWJlbCBodG1sRm9yPVwibG9jYXRpb25cIj5Mb2NhdGlvbiAqPC9sYWJlbD5cbiAgICAgICAgICAgICAgICA8c2VsZWN0IGlkPVwibG9jYXRpb25cIiByZXF1aXJlZCBkZWZhdWx0VmFsdWU9XCJcIj5cbiAgICAgICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9XCJcIj5TZWxlY3QgbG9jYXRpb248L29wdGlvbj5cbiAgICAgICAgICAgICAgICAgIDxvcHRpb24+Q29pbWJhdG9yZSAtIEt1cnVtYmFwYWxheWFtPC9vcHRpb24+XG4gICAgICAgICAgICAgICAgICA8b3B0aW9uPk9vdHk8L29wdGlvbj5cbiAgICAgICAgICAgICAgICA8L3NlbGVjdD5cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZm9ybS1ncm91cFwiPlxuICAgICAgICAgICAgICAgIDxsYWJlbCBodG1sRm9yPVwidHJlYXRtZW50XCI+VHJlYXRtZW50IE5lZWRlZCAqPC9sYWJlbD5cbiAgICAgICAgICAgICAgICA8c2VsZWN0IGlkPVwidHJlYXRtZW50XCIgcmVxdWlyZWQgZGVmYXVsdFZhbHVlPVwiXCI+XG4gICAgICAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPVwiXCI+U2VsZWN0IHRyZWF0bWVudDwvb3B0aW9uPlxuICAgICAgICAgICAgICAgICAge3RyZWF0bWVudHNGb3JGb3JtLm1hcCgodHJlYXRtZW50KSA9PiAoXG4gICAgICAgICAgICAgICAgICAgIDxvcHRpb24ga2V5PXt0cmVhdG1lbnR9Pnt0cmVhdG1lbnR9PC9vcHRpb24+XG4gICAgICAgICAgICAgICAgICApKX1cbiAgICAgICAgICAgICAgICA8L3NlbGVjdD5cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZm9ybS1ncm91cFwiPlxuICAgICAgICAgICAgICA8bGFiZWwgaHRtbEZvcj1cIm1lc3NhZ2VcIj5NZXNzYWdlPC9sYWJlbD5cbiAgICAgICAgICAgICAgPHRleHRhcmVhIGlkPVwibWVzc2FnZVwiIHJvd3M9ezR9IHBsYWNlaG9sZGVyPVwiVGVsbCB1cyBhYm91dCB5b3VyIGNvbmNlcm4uLi5cIiAvPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8YnV0dG9uIHR5cGU9XCJzdWJtaXRcIiBjbGFzc05hbWU9XCJidG4tcHJpbWFyeSBmb3JtLXN1Ym1pdFwiPlxuICAgICAgICAgICAgICBTdWJtaXQgQXBwb2ludG1lbnQgUmVxdWVzdFxuICAgICAgICAgICAgPC9idXR0b24+XG4gICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJmb3JtLW5vdGVcIj5XYWxrLWlucyB3ZWxjb21lIGR1cmluZyBjbGluaWMgaG91cnM8L3A+XG4gICAgICAgICAgICB7c3VibWl0dGVkICYmIChcbiAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwic3VjY2Vzcy1tZXNzYWdlXCIgcm9sZT1cInN0YXR1c1wiPlxuICAgICAgICAgICAgICAgIFRoYW5rIHlvdS4gWW91ciBhcHBvaW50bWVudCByZXF1ZXN0IHdhcyByZWNlaXZlZCwgYW5kIG91ciB0ZWFtIHdpbGxcbiAgICAgICAgICAgICAgICBjb250YWN0IHlvdSBzaG9ydGx5LlxuICAgICAgICAgICAgICA8L3A+XG4gICAgICAgICAgICApfVxuICAgICAgICAgIDwvZm9ybT5cblxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibG9jYXRpb24tc3RhY2tcIj5cbiAgICAgICAgICAgIDxhcnRpY2xlIGNsYXNzTmFtZT1cImxvY2F0aW9uLWNhcmQgY2FyZFwiPlxuICAgICAgICAgICAgICA8aDM+Q29pbWJhdG9yZSAoTWFpbik8L2gzPlxuICAgICAgICAgICAgICA8cD5cbiAgICAgICAgICAgICAgICA8TWFwUGluIGFyaWEtaGlkZGVuPVwidHJ1ZVwiIC8+XG4gICAgICAgICAgICAgICAge2FkZHJlc3N9XG4gICAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgICAgPHA+XG4gICAgICAgICAgICAgICAgPFBob25lIGFyaWEtaGlkZGVuPVwidHJ1ZVwiIC8+XG4gICAgICAgICAgICAgICAgPGEgaHJlZj17cGhvbmVIcmVmfT57cGhvbmVEaXNwbGF5fTwvYT5cbiAgICAgICAgICAgICAgPC9wPlxuICAgICAgICAgICAgICA8cD5cbiAgICAgICAgICAgICAgICA8Q2xvY2sgYXJpYS1oaWRkZW49XCJ0cnVlXCIgLz5cbiAgICAgICAgICAgICAgICB7aG91cnN9XG4gICAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgICAgPHA+XG4gICAgICAgICAgICAgICAgPE1haWwgYXJpYS1oaWRkZW49XCJ0cnVlXCIgLz5cbiAgICAgICAgICAgICAgICA8YSBocmVmPXtlbWFpbEhyZWZ9PntlbWFpbH08L2E+XG4gICAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgICAgPGEgaHJlZj1cImh0dHBzOi8vc2hhcmUuZ29vZ2xlLzhSTHBRRzE3VkZjaXBxbkJCXCIgY2xhc3NOYW1lPVwidGV4dC1saW5rXCI+XG4gICAgICAgICAgICAgICAgT3BlbiBpbiBHb29nbGUgTWFwcyDihpJcbiAgICAgICAgICAgICAgPC9hPlxuICAgICAgICAgICAgPC9hcnRpY2xlPlxuICAgICAgICAgICAgPGFydGljbGUgY2xhc3NOYW1lPVwibG9jYXRpb24tY2FyZCBjYXJkXCI+XG4gICAgICAgICAgICAgIDxoMz5Pb3R5PC9oMz5cbiAgICAgICAgICAgICAgPHA+XG4gICAgICAgICAgICAgICAgPE1hcFBpbiBhcmlhLWhpZGRlbj1cInRydWVcIiAvPlxuICAgICAgICAgICAgICAgIEtyaXNobmFtbWFsIEFwYXJ0bWVudHMsIEJhbmRsYW5lLCBPbGQgTGliZXJ0eSBUaGVhdHJlIEJhY2tzaWRlLCBPb3R5IC1cbiAgICAgICAgICAgICAgICA2NDMgMDAxXG4gICAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgICAgPHA+XG4gICAgICAgICAgICAgICAgPFBob25lIGFyaWEtaGlkZGVuPVwidHJ1ZVwiIC8+XG4gICAgICAgICAgICAgICAgPGEgaHJlZj17cGhvbmVIcmVmfT57cGhvbmVEaXNwbGF5fTwvYT5cbiAgICAgICAgICAgICAgPC9wPlxuICAgICAgICAgICAgICA8cD5cbiAgICAgICAgICAgICAgICA8Q2xvY2sgYXJpYS1oaWRkZW49XCJ0cnVlXCIgLz5cbiAgICAgICAgICAgICAgICB7aG91cnN9XG4gICAgICAgICAgICAgIDwvcD5cbiAgICAgICAgICAgICAgPGEgaHJlZj1cImh0dHBzOi8vbWFwcy5hcHAuZ29vLmdsLzZHaEpZc0w2SFpoNzNZY284XCIgY2xhc3NOYW1lPVwidGV4dC1saW5rXCI+XG4gICAgICAgICAgICAgICAgT3BlbiBpbiBHb29nbGUgTWFwcyDihpJcbiAgICAgICAgICAgICAgPC9hPlxuICAgICAgICAgICAgPC9hcnRpY2xlPlxuICAgICAgICAgICAgPGEgaHJlZj17d2hhdHNhcHBIcmVmfSBjbGFzc05hbWU9XCJidG4tcHJpbWFyeSB3aGF0c2FwcC1idXR0b25cIj5cbiAgICAgICAgICAgICAgPE1lc3NhZ2VDaXJjbGUgc2l6ZT17MTh9IGFyaWEtaGlkZGVuPVwidHJ1ZVwiIC8+XG4gICAgICAgICAgICAgIENoYXQgb24gV2hhdHNBcHBcbiAgICAgICAgICAgIDwvYT5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5cbiAgICA8L3NlY3Rpb24+XG4gICk7XG59XG5cbmZ1bmN0aW9uIEZvb3RlclNlY3Rpb24oKSB7XG4gIHJldHVybiAoXG4gICAgPGZvb3RlciBpZD1cImZvb3RlclwiPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWluZXJcIj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmb290ZXItZ3JpZFwiPlxuICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICA8TG9nbyAvPlxuICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwiZm9vdGVyLXRhZ2xpbmVcIj5QYWlubGVzcyBEZW50YWwgQ2xpbmljPC9wPlxuICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwiZm9vdGVyLXN1YnRhZ1wiPkFkdmFuY2VkIExBU0VSLCBJTVBMQU5UICYgQ09TTUVUSUMgU01JTEUgQ0VOVEVSPC9wPlxuICAgICAgICAgICAgPHAgY2xhc3NOYW1lPVwiZm9vdGVyLWdyb3VwXCI+UGFydCBvZiBSYW0gS2FseWFuIEdyb3VwIG9mIENsaW5pY3M8L3A+XG4gICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJmb290ZXItbXV0ZWRcIj5cbiAgICAgICAgICAgICAgRGVudGFsICYgRmFjZSBTdXJnZXJ5IMK3IERpYWJldGVzIENhcmUgwrcgR2VuZXJhbCBIZWFsdGhjYXJlIMK3IFNleG9sb2d5XG4gICAgICAgICAgICA8L3A+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInNvY2lhbC1saW5rc1wiPlxuICAgICAgICAgICAgICA8YSBocmVmPVwiI1wiIGFyaWEtbGFiZWw9XCJJbnN0YWdyYW1cIj5cbiAgICAgICAgICAgICAgICA8SW5zdGFncmFtIHNpemU9ezE4fSAvPlxuICAgICAgICAgICAgICA8L2E+XG4gICAgICAgICAgICAgIDxhIGhyZWY9XCIjXCIgYXJpYS1sYWJlbD1cIkZhY2Vib29rXCI+XG4gICAgICAgICAgICAgICAgPEZhY2Vib29rIHNpemU9ezE4fSAvPlxuICAgICAgICAgICAgICA8L2E+XG4gICAgICAgICAgICAgIDxhIGhyZWY9XCIjXCIgYXJpYS1sYWJlbD1cIllvdVR1YmVcIj5cbiAgICAgICAgICAgICAgICA8WW91dHViZSBzaXplPXsxOH0gLz5cbiAgICAgICAgICAgICAgPC9hPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgIDxoMz5RdWljayBMaW5rczwvaDM+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZvb3Rlci1saW5rc1wiPlxuICAgICAgICAgICAgICA8YSBocmVmPVwiI2hlcm9cIj5Ib21lPC9hPlxuICAgICAgICAgICAgICA8YSBocmVmPVwiI3RyZWF0bWVudHNcIj5UcmVhdG1lbnRzPC9hPlxuICAgICAgICAgICAgICA8YSBocmVmPVwiI2RvY3RvcnNcIj5Eb2N0b3JzPC9hPlxuICAgICAgICAgICAgICA8YSBocmVmPVwiI2VxdWlwbWVudFwiPkVxdWlwbWVudDwvYT5cbiAgICAgICAgICAgICAgPGEgaHJlZj1cIiNhYm91dFwiPkFib3V0PC9hPlxuICAgICAgICAgICAgICA8YSBocmVmPVwiI2NvbnRhY3RcIj5Db250YWN0PC9hPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgIDxoMz5HZXQgaW4gVG91Y2g8L2gzPlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJmb290ZXItY29udGFjdFwiPlxuICAgICAgICAgICAgICA8YSBocmVmPXtwaG9uZUhyZWZ9PntwaG9uZURpc3BsYXl9PC9hPlxuICAgICAgICAgICAgICA8YSBocmVmPXtlbWFpbEhyZWZ9PntlbWFpbH08L2E+XG4gICAgICAgICAgICAgIDxzcGFuPjEwQU0tMVBNIMK3IDVQTS04UE0gRGFpbHk8L3NwYW4+XG4gICAgICAgICAgICAgIDxzcGFuPlVuaXQgMTogS3VydW1iYXBhbGF5YW0sIENvaW1iYXRvcmUgNjQxIDEwNzwvc3Bhbj5cbiAgICAgICAgICAgICAgPHNwYW4+VW5pdCAyOiBPb3R5IDY0MyAwMDE8L3NwYW4+XG4gICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiZm9vdGVyLWJvdHRvbVwiPlxuICAgICAgICAgIDxzcGFuPsKpIDIwMjUgUmFta2FseWFuIERlbnRhbCAmIEZhY2UgU3VyZ2ljYWwgQ2xpbmljLiBBbGwgUmlnaHRzIFJlc2VydmVkLjwvc3Bhbj5cbiAgICAgICAgICA8c3Bhbj5Db2ltYmF0b3JlIMK3IE9vdHkgwrcgQ2hlbm5haTwvc3Bhbj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5cbiAgICA8L2Zvb3Rlcj5cbiAgKTtcbn1cblxuZnVuY3Rpb24gRmxvYXRpbmdBY3Rpb25zKCkge1xuICBjb25zdCBbdmlzaWJsZSwgc2V0VmlzaWJsZV0gPSB1c2VTdGF0ZShmYWxzZSk7XG5cbiAgdXNlRWZmZWN0KCgpID0+IHtcbiAgICBjb25zdCBvblNjcm9sbCA9ICgpID0+IHNldFZpc2libGUod2luZG93LnNjcm9sbFkgPiAzMDApO1xuICAgIHdpbmRvdy5hZGRFdmVudExpc3RlbmVyKCdzY3JvbGwnLCBvblNjcm9sbCwgeyBwYXNzaXZlOiB0cnVlIH0pO1xuICAgIG9uU2Nyb2xsKCk7XG4gICAgcmV0dXJuICgpID0+IHdpbmRvdy5yZW1vdmVFdmVudExpc3RlbmVyKCdzY3JvbGwnLCBvblNjcm9sbCk7XG4gIH0sIFtdKTtcblxuICByZXR1cm4gKFxuICAgIDw+XG4gICAgICA8YSBpZD1cIndoYXRzYXBwLWZhYlwiIGhyZWY9e3doYXRzYXBwSHJlZn0gYXJpYS1sYWJlbD1cIkNoYXQgb24gV2hhdHNBcHBcIj5cbiAgICAgICAgPE1lc3NhZ2VDaXJjbGUgYXJpYS1oaWRkZW49XCJ0cnVlXCIgLz5cbiAgICAgIDwvYT5cbiAgICAgIDxidXR0b25cbiAgICAgICAgaWQ9XCJiYWNrLXRvLXRvcFwiXG4gICAgICAgIGNsYXNzTmFtZT17dmlzaWJsZSA/ICd2aXNpYmxlJyA6ICcnfVxuICAgICAgICB0eXBlPVwiYnV0dG9uXCJcbiAgICAgICAgYXJpYS1sYWJlbD1cIkJhY2sgdG8gdG9wXCJcbiAgICAgICAgb25DbGljaz17KCkgPT4gd2luZG93LnNjcm9sbFRvKHsgdG9wOiAwLCBiZWhhdmlvcjogJ3Ntb290aCcgfSl9XG4gICAgICA+XG4gICAgICAgIOKGkVxuICAgICAgPC9idXR0b24+XG4gICAgPC8+XG4gICk7XG59XG5cbmZ1bmN0aW9uIEFwcCgpIHtcbiAgdXNlRWZmZWN0KCgpID0+IHtcbiAgICBjb25zdCBvYnNlcnZlciA9IG5ldyBJbnRlcnNlY3Rpb25PYnNlcnZlcihcbiAgICAgIChlbnRyaWVzKSA9PiB7XG4gICAgICAgIGVudHJpZXMuZm9yRWFjaCgoZW50cnkpID0+IHtcbiAgICAgICAgICBpZiAoZW50cnkuaXNJbnRlcnNlY3RpbmcpIHtcbiAgICAgICAgICAgIGVudHJ5LnRhcmdldC5jbGFzc0xpc3QuYWRkKCdpbi12aWV3Jyk7XG4gICAgICAgICAgICBvYnNlcnZlci51bm9ic2VydmUoZW50cnkudGFyZ2V0KTtcbiAgICAgICAgICB9XG4gICAgICAgIH0pO1xuICAgICAgfSxcbiAgICAgIHsgdGhyZXNob2xkOiAwLjEyIH1cbiAgICApO1xuXG4gICAgZG9jdW1lbnRcbiAgICAgIC5xdWVyeVNlbGVjdG9yQWxsKCcuY2FyZCwgLnByb2Nlc3Mtc3RlcCwgLnNlY3Rpb24taGVhZGVyLCAuZ2FsbGVyeS1pdGVtLCAuZG9jdG9yLWNhcmQnKVxuICAgICAgLmZvckVhY2goKGVsKSA9PiBvYnNlcnZlci5vYnNlcnZlKGVsKSk7XG5cbiAgICByZXR1cm4gKCkgPT4gb2JzZXJ2ZXIuZGlzY29ubmVjdCgpO1xuICB9LCBbXSk7XG5cbiAgcmV0dXJuIChcbiAgICA8PlxuICAgICAgPE5hdmJhciAvPlxuICAgICAgPG1haW4+XG4gICAgICAgIDxIZXJvU2VjdGlvbiAvPlxuICAgICAgICA8SW5mb0JhciAvPlxuICAgICAgICA8V2h5U2VjdGlvbiAvPlxuICAgICAgICA8VHJlYXRtZW50c1NlY3Rpb24gLz5cbiAgICAgICAgPFByb2Nlc3NTZWN0aW9uIC8+XG4gICAgICAgIDxEb2N0b3JzU2VjdGlvbiAvPlxuICAgICAgICA8RXF1aXBtZW50U2VjdGlvbiAvPlxuICAgICAgICA8R2FsbGVyeVNlY3Rpb24gLz5cbiAgICAgICAgPFRlc3RpbW9uaWFsc1NlY3Rpb24gLz5cbiAgICAgICAgPEFib3V0U2VjdGlvbiAvPlxuICAgICAgICA8Q3RhQmFubmVyIC8+XG4gICAgICAgIDxDb250YWN0U2VjdGlvbiAvPlxuICAgICAgPC9tYWluPlxuICAgICAgPEZvb3RlclNlY3Rpb24gLz5cbiAgICAgIDxGbG9hdGluZ0FjdGlvbnMgLz5cbiAgICA8Lz5cbiAgKTtcbn1cblxuZXhwb3J0IGRlZmF1bHQgQXBwO1xuIl0sImZpbGUiOiJDOi9Vc2Vycy9BYmlzaGVrL0Rvd25sb2Fkcy9LaW1pX0FnZW50X1JLRFMgRGVudGFsIFNpdGUgRGVzaWduL2FwcC9zcmMvQXBwLnRzeCJ9
